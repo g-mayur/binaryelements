@@ -12,13 +12,13 @@ import itpecypcSVG from "../assets/heroslider/itpecypc.svg";
 import cloudpecypcSVG from "../assets/heroslider/cloudpecypc.svg";
 import growthpecypcSVG from "../assets/heroslider/growthpecypc.svg";
 import iotpecypcSVG from "../assets/heroslider/iotpecypc.svg";
-import BgImage from "../assets/products/bg-vector.svg";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import {
   voipElementsbg, itElementsbg, cloudElementsbg, growthElementsbg, iotElementsbg, logotext, joinText, joinBtn, thumbSlider, thumbSliderRange, range, futuregoals_holder, businessclarity_holder, subtitle, product_service
 }
 from "../styles/home.module.css"
 import Companies from "../components/common/companies";
+import Updates from "../components/common/updates";
 
 export default class AsNavFor extends Component {
   constructor(props) {
@@ -225,9 +225,6 @@ export default class AsNavFor extends Component {
               </Col>
             </Row>
           </Container>
-          {/* <div className="bg-image">
-            <img src={BgImage} alt="Background Vector" />
-          </div> */}
         </section>
         <section className={`${futuregoals_holder}`}>
           <Container fluid>
@@ -241,6 +238,7 @@ export default class AsNavFor extends Component {
             </Row>
           </Container>
         </section>
+        <Updates />
         <section className={`${businessclarity_holder}`}>
           <Container fluid>
             <Row className="justify-content-center align-items-center">
