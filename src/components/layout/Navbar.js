@@ -1,49 +1,52 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import LogoSVG from '../../assets/logo.svg';
+import { navbar, menu__item } from "../../styles/home.module.css";
 
-export default function Navbar() {
+export default function MainNav() {
   return (
-    <nav className="d-flex flex-row">
-      <span className="px-3">
-        <Link to="/">
-          <b className="text-black">Home</b>
-        </Link>
-      </span>
-      <span className="px-2">
-        <Link to="/contact-us">
-          <b className="text-black">contact us</b>
-        </Link>
-      </span>
-      <span className="px-2">
-        <Link to="/business-units/voip-elements">
-          <b className="text-black">Voip Elements</b>
-        </Link>
-      </span>
-      <span className="px-2">
-        <Link to="/business-units/it-elements">
-          <b className="text-black">IT Elements</b>
-        </Link>
-      </span>
-      <span className="px-2">
-        <Link to="/business-units/cloud-elements">
-          <b className="text-black">Cloud Elements</b>
-        </Link>
-      </span>
-      <span className="px-2">
-        <Link to="/business-units/growth-elements">
-          <b className="text-black">Growth Elements</b>
-        </Link>
-      </span>
-      <span className="px-2">
-        <Link to="/business-units/iot-elements">
-          <b className="text-black">IOT Elements</b>
-        </Link>
-      </span>
-      <span className="px-2">
-        <Link to="/static-templates">
-          <b className="text-black">Static Templates</b>
-        </Link>
-      </span>
-    </nav>
+    <>
+      {['md'].map((expand) => (
+        <Navbar key={expand} expand={expand} fixed="top" className={`py-3 ${navbar}`}>
+          <Container fluid>
+            <Navbar.Brand>
+              <Link to="/" className="d-flex align-items-center">
+                <img src={LogoSVG} alt="Binary Element Logo" />
+              </Link>
+            </Navbar.Brand>
+            <Navbar.Toggle className="p-0 border-0" aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+              className="mobile-menu"
+              // responsive="sm"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Navbar.Brand>
+                  <Link to="/" className="d-flex align-items-center">
+                    <img src={LogoSVG} alt="Binary Element Logo" />
+                  </Link>
+                </Navbar.Brand>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="header__menu justify-content-center flex-grow-1 pe-3">
+                  <Link className={menu__item} to="/about-us">About Us</Link>
+                  <Link className={menu__item} to="/contact-us">Contact Us</Link>
+                  <Link className={menu__item} to="/our-business-units">Our Business Units</Link>
+                  <Link className={menu__item} to="/updates">News Updates</Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </>
   )
 }
