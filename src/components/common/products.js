@@ -23,7 +23,7 @@ const [slider,setSlider] = useState()
         const ProductWrapper = document.querySelector(".product-slider");
         ProductWrapper.addEventListener('wheel', (e) => {
             scroll(e.wheelDelta);
-            // e.preventDefault();
+            e.preventDefault();
         })
     },)
     var settings = {
