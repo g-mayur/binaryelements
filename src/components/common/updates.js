@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React from 'react'
+import React,{useState} from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Slider from "react-slick";
 import updateImage1 from "../../assets/updates/updateImg-1.png";
@@ -7,6 +7,8 @@ import updateImage2 from "../../assets/updates/updateImg-2.png";
 import updateImage3 from "../../assets/updates/updateImg-3.png";
 
 const Updates = () => {
+
+    const [ab , setAb]=useState(0);
     const updateSlider = {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -15,11 +17,13 @@ const Updates = () => {
         // autoplay: true,
         speed: 2000,
         autoplaySpeed: 3500,
-        centerMode: true,
-        centerPadding: "60px",
+        centerMode:ab===2?false: true,
+        // centerPadding: "60px",
         vertical: false,
         infinite: false,
         initialSlide: 0,
+        beforeChange:(next)=>setAb(next),
+
         responsive: [
             {
                 breakpoint: 1200,
@@ -57,6 +61,7 @@ const Updates = () => {
     }
   return (
     <div className="updates_holder">
+        {ab}
         <Container fluid>
             <Row>
                 <Col xs={12} sm={12} md={10} lg={10} xl={8}>
