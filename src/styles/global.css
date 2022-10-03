@@ -398,6 +398,56 @@ svg {
   display: none;
 }
 
+/* PRODUCTS and SERVICES SLIDER */
+
+.product-slider .slick-track {
+  display: flex;
+}
+
+.product-slider .slick-list {
+  margin: 0 -27px;
+  padding-left: 0 20% 0 0 !important;
+}
+
+.product-slider .slick-list .slick-slide {
+  margin: 0 87px;
+}
+
+.product-slider .slick-list .slick-slide img {
+  filter: drop-shadow(0px 77px 95px rgba(0, 0, 0, 0.4));
+}
+
+.product-slider .product__wrapper.communicate {
+  background-image: url('../assets/products/red-vector.png');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.product-slider .product__wrapper.run {
+  background-image: url('../assets/products/vector-shape.png');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.product-slider .product__wrapper.protect {
+  background-image: url('../assets/products/vector-shape-1.png');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.product-slider .product__wrapper.automate {
+  background-image: url('../assets/products/vector-shape-2.png');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.product-slider .product__wrapper.future {
+  background-image: url('../assets/products/vector-shape-3.png');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* FOOTER STYLING */
 .footer {
   background: #333333;
