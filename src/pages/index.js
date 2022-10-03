@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import Layout from "../components/layout/Layout"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Slider from "react-slick";
@@ -193,7 +193,7 @@ const AsNavFor = () => {
           </Slider>
           <Slider {...Thumbslider}
             className={`navthumbs ${thumbSlider}`}
-            asNavFor={nav2}
+            asNavFor={nav1}
             ref={slider => setNav2(slider)}
           >
             <div className={`${thumbSliderRange}`}><h3 className="text-white">1. voipelements</h3><div className={`range ${range}`}></div></div>

@@ -9,7 +9,6 @@ import Automate from '../../assets/products/automate.png';
 import Future from '../../assets/products/future.png';
 
 const Products = () => {
-// const [slide,setSlide] = useState()
 const [slider,setSlider] = useState()
 
    const  scroll = (y) =>{
@@ -21,14 +20,13 @@ const [slider,setSlider] = useState()
         )
     }
     useEffect(() => {
-        let ProductWrapper = document.querySelector(".product-slider");
+        const ProductWrapper = document.querySelector(".product-slider");
         ProductWrapper.addEventListener('wheel', (e) => {
             scroll(e.wheelDelta);
-            e.preventDefault();
+            // e.preventDefault();
         })
-    },[])
+    },)
     var settings = {
-        // dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3.5,

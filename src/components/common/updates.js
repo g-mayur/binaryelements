@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React,{useState} from 'react'
+import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Slider from "react-slick";
 import updateImage1 from "../../assets/updates/updateImg-1.png";
