@@ -6,59 +6,58 @@
 /* FIGTREE FONTS */
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url('../../static/fonts/Figtree-Light.woff2') format('woff2');
+  src: url("../../static/fonts/Figtree-Light.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url('../../static/fonts/Figtree-Regular.woff2') format('woff2');
+  src: url("../../static/fonts/Figtree-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url('../../static/fonts/Figtree-Medium.woff2') format('woff2');
+  src: url("../../static/fonts/Figtree-Medium.woff2") format("woff2");
 }
 
-
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url('../../static/fonts/Figtree-Bold.woff2') format('woff2');
+  src: url("../../static/fonts/Figtree-Bold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-  src: url('../../static/fonts/Figtree-Black.woff2') format('woff2');
+  src: url("../../static/fonts/Figtree-Black.woff2") format("woff2");
 }
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Figtree';
+  font-family: "Figtree";
 }
 
 html,
 body {
   min-height: 100%;
-  height: 100%;
+  /* height: 100%; */
   overflow-x: hidden;
-  background-color: #1E1E1E !important;
+  background-color: #1e1e1e !important;
   scroll-behavior: smooth;
 }
 
@@ -73,28 +72,28 @@ svg {
 /* COMMON TEXT CSS */
 
 .overlay::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1C1C1C;
+  background: #1c1c1c;
   opacity: 0.6;
   z-index: -1;
 }
 
 .header__menu a {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F2F2F2 !important;
+  color: #f2f2f2 !important;
 }
 
 .text-dark-bg {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -103,7 +102,7 @@ svg {
 }
 
 .text-light-bg {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -112,7 +111,7 @@ svg {
 }
 
 .H0 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 300;
   font-size: 160px;
@@ -122,7 +121,7 @@ svg {
 }
 
 .H1 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 400;
   font-size: 96px;
@@ -132,17 +131,17 @@ svg {
 }
 
 .H2 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
   line-height: 68px;
   letter-spacing: -0.03em;
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .H3 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -152,7 +151,7 @@ svg {
 }
 
 .H4 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -162,7 +161,7 @@ svg {
 }
 
 .H5 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -172,7 +171,7 @@ svg {
 }
 
 .H6 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -186,19 +185,19 @@ svg {
 }
 
 .start__btn {
-  font-family: 'Figtree' !important;
+  font-family: "Figtree" !important;
   font-style: normal !important;
   font-weight: 500 !important;
   font-size: 16px !important;
   line-height: 24px !important;
   text-align: center !important;
-  color: #F2F2F2 !important;
+  color: #f2f2f2 !important;
   width: 181px;
   height: 48px;
 }
 
 .bg-orange {
-  background: #EF791E !important;
+  background: #ef791e !important;
   border-radius: 80px !important;
   border: none !important;
 }
@@ -214,7 +213,7 @@ svg {
 }
 
 .navthumbs .slick-slide.slick-current h3 {
-  color: #FFDD71 !important;
+  color: #ffdd71 !important;
   font-weight: 600;
   opacity: 1;
 }
@@ -228,13 +227,13 @@ svg {
 }
 
 .navthumbs .slick-slide.slick-current .range:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: #FFDD71;
+  background-color: #ffdd71;
   opacity: 1;
   border-radius: 20px;
   transition: all 0.4s ease;
@@ -245,7 +244,7 @@ svg {
 .updates_holder {
   padding: 4% 0;
   border-radius: 48px;
-  background-image: url('../assets/products/background-co.png');
+  background-image: url("../assets/products/background-co.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -255,12 +254,12 @@ svg {
 }
 
 .updates_holder::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 220px;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/products/bg-vector.svg');
+  background-image: url("../assets/products/bg-vector.svg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -283,14 +282,22 @@ svg {
   border-radius: 24px;
 }
 
-.updates_holder .updates__slider_wrapper .updates__wrapper .updates_content .meta {
+.updates_holder
+  .updates__slider_wrapper
+  .updates__wrapper
+  .updates_content
+  .meta {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #828282;
 }
 
-.updates_holder .updates__slider_wrapper .updates__wrapper .updates_content .title {
+.updates_holder
+  .updates__slider_wrapper
+  .updates__wrapper
+  .updates_content
+  .title {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -298,7 +305,11 @@ svg {
   color: #333333;
 }
 
-.updates_holder .updates__slider_wrapper .updates__wrapper .updates_content .description {
+.updates_holder
+  .updates__slider_wrapper
+  .updates__wrapper
+  .updates_content
+  .description {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -310,7 +321,7 @@ svg {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #EF791E;
+  color: #ef791e;
   text-decoration: none;
 }
 
@@ -330,14 +341,14 @@ svg {
 .updates_holder .updates__slider_wrapper button.slick-prev {
   left: auto;
   right: 10%;
-  background-image: url('../assets/companies/arrow-left.svg');
+  background-image: url("../assets/companies/arrow-left.svg");
   background-position: center;
   background-size: contain;
 }
 
 .updates_holder .updates__slider_wrapper button.slick-next {
   right: 5%;
-  background-image: url('../assets/companies/arrow-right.svg');
+  background-image: url("../assets/companies/arrow-right.svg");
   background-position: center;
   background-size: contain;
 }
@@ -350,7 +361,7 @@ svg {
 
 .trustedcomapnies_holder {
   padding: 150px 0;
-  background-color: #FFF9EF;
+  background-color: #fff9ef;
 }
 
 .trustedcomapnies_holder .slick-list {
@@ -382,14 +393,14 @@ svg {
 
 .trustedcomapnies_holder button.slick-prev {
   left: 35%;
-  background-image: url('../assets/companies/arrow-left.svg');
+  background-image: url("../assets/companies/arrow-left.svg");
   background-position: center;
   background-size: contain;
 }
 
 .trustedcomapnies_holder button.slick-next {
   right: 35%;
-  background-image: url('../assets/companies/arrow-right.svg');
+  background-image: url("../assets/companies/arrow-right.svg");
   background-position: center;
   background-size: contain;
 }
@@ -418,31 +429,31 @@ svg {
 }
 
 .product-slider .product__wrapper.communicate {
-  background-image: url('../assets/products/red-vector.png');
+  background-image: url("../assets/products/red-vector.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .product-slider .product__wrapper.run {
-  background-image: url('../assets/products/vector-shape.png');
+  background-image: url("../assets/products/vector-shape.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .product-slider .product__wrapper.protect {
-  background-image: url('../assets/products/vector-shape-1.png');
+  background-image: url("../assets/products/vector-shape-1.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .product-slider .product__wrapper.automate {
-  background-image: url('../assets/products/vector-shape-2.png');
+  background-image: url("../assets/products/vector-shape-2.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .product-slider .product__wrapper.future {
-  background-image: url('../assets/products/vector-shape-3.png');
+  background-image: url("../assets/products/vector-shape-3.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -455,12 +466,12 @@ svg {
 }
 
 .footer * {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #F2F2F2 !important;
+  color: #f2f2f2 !important;
   text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
@@ -474,12 +485,12 @@ svg {
 }
 
 .footer .copyright * {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024.98px) {
@@ -505,23 +516,23 @@ svg {
   }
 
   .H1 {
-    font-family: 'Figtree';
+    font-family: "Figtree";
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 52px;
     letter-spacing: -0.03em;
-    color: #E0E0E0;
+    color: #e0e0e0;
   }
 
   .H2 {
-    font-family: 'Figtree';
+    font-family: "Figtree";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
     letter-spacing: -0.03em;
-    color: #F2F2F2;
+    color: #f2f2f2;
   }
 
   /* NAVBAR Styling */
@@ -531,7 +542,7 @@ svg {
   }
 
   button.navbar-toggler span {
-    background-image: url('../assets/menu.svg');
+    background-image: url("../assets/menu.svg");
   }
 
   .mobile-menu {
@@ -548,7 +559,7 @@ svg {
   }
 
   .mobile-menu .offcanvas-header .btn-close {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 50px;
     opacity: 1;
     padding: 16px;
@@ -562,13 +573,13 @@ svg {
   .mobile-menu .offcanvas-body .header__menu a {
     text-align: center;
     text-decoration: none;
-    font-family: 'Figtree';
+    font-family: "Figtree";
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 42px;
     letter-spacing: -0.02em;
-    color: #F2F2F2;
+    color: #f2f2f2;
     margin-bottom: 29px;
     padding: 29px 0;
     transition: all 0.5s ease;
@@ -576,7 +587,7 @@ svg {
 
   .mobile-menu .offcanvas-body .header__menu a[aria-current="page"] {
     color: #333333 !important;
-    background: #FFDD71;
+    background: #ffdd71;
     border-radius: 50px;
   }
 
