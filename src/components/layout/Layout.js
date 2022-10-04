@@ -1,14 +1,16 @@
-import React from "react"
-import Navbar from "./Navbar"
-import "../../styles/global.css"
+import React from "react";
+import MainNav from "./Navbar";
+import Footer from "./Footer";
+import "../../styles/global.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Layout({ children }) {
   return (
     <div className="layout">
-      <Navbar />
-      <div className="content">{children}</div>
-
-      <footer className="">{/* <p>copyrights 2022 gatsby</p> */}</footer>
+      <MainNav />
+      <div className="content position-relative">{children}</div>
+      <Footer />
     </div>
   )
 }
