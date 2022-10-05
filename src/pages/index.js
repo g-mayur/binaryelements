@@ -203,7 +203,7 @@ const AsNavFor = () => {
             <div className={`${thumbSliderRange}`}><h3 className="text-white">5. iotelements</h3><div className={`range ${range}`}></div></div>
           </Slider>
         </section>
-        <section className={`${product_service}`}>
+        <section className={`${product_service}`} id="section_2">
           <Container fluid>
             <Row>
               <Col xs={12} sm={12} md={10} lg={10} xl={8}>
@@ -215,7 +215,7 @@ const AsNavFor = () => {
           </Container>
           <Products />
         </section>
-        <section className={`${futuregoals_holder}`}>
+        <section className={`${futuregoals_holder}`} id="section_3">
           <Container fluid>
             <Row className="justify-content-center align-items-center">
               <Col xs={12} sm={12} md={12} lg={10} xl={10} className="text-center">
