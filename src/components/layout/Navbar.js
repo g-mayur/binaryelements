@@ -12,15 +12,16 @@ import { Button } from "react-bootstrap";
 const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
-  if (!isBrowser) {
-    return;
-  }
+  // if (!isBrowser) {
+  //   return;
+  // }
   
   var prevScrollpos = window.pageYOffset;
   const navRef = React.useRef(null);
   const MenuRef = React.useRef(null);
 
   window.onscroll = function () {
+    if(window.innerWidth > 767)
     scrollFunction();
     // console.log ('Test');
   };
@@ -121,9 +122,9 @@ export default function MainNav() {
         <div className="icon d-flex align-items-center">
           <span>Menu</span>
           <a className="ms-2" id="hamburger-icon" href="#" title="Menu">
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
+            <span className="line line-1"></span>
+            <span className="line line-2"></span>
+            <span className="line line-3"></span>
           </a>
         </div>
       </Button>

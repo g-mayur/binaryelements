@@ -213,7 +213,6 @@
     .cloudElementsbg,
     .growthElementsbg,
     .iotElementsbg {
-        height: 100vh;
         padding: 10% 0 15%;
     }
 }
@@ -231,7 +230,6 @@
     .cloudElementsbg,
     .growthElementsbg,
     .iotElementsbg {
-        height: 100vh;
         padding: 10% 0 15%;
     }
 
@@ -247,7 +245,6 @@
     .cloudElementsbg,
     .growthElementsbg,
     .iotElementsbg {
-        height: 880px;
         padding: 10% 0 25%;
     }
 
@@ -267,7 +264,6 @@
     .cloudElementsbg,
     .growthElementsbg,
     .iotElementsbg {
-        height: 750px;
         padding: 0 0 25%;
     }
 
