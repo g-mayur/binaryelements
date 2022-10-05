@@ -7,6 +7,8 @@ import Run from '../../assets/products/run.png';
 import Protect from '../../assets/products/protect.png';
 import Automate from '../../assets/products/automate.png';
 import Future from '../../assets/products/future.png';
+import { Link } from 'gatsby';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Products = () => {
 const [slider,setSlider] = useState()
@@ -45,39 +47,93 @@ const [slider,setSlider] = useState()
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                initialSlide: 2
+                initialSlide: 2,
+                settings: 'unslick'
             }
             },
             {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 5,
+                slidesToScroll: 0,
+                vertical: true,
+                verticalSwiping: true,
+                beforeChange: function(currentSlide, nextSlide) {
+                  console.log("before change", currentSlide, nextSlide);
+                },
+                afterChange: function(currentSlide) {
+                  console.log("after change", currentSlide);
+                }
                 
             }
             }
         ]
         };
   return (
-    <div className='mt-5 product-slider'>
+    <>
+    <div className='mt-5 product-slider d-none d-md-block'>
         <Slider {...settings} ref={slider => setSlider(slider)}>
-          <div className='product__wrapper py-5 text-center communicate'>
+          <div className='product__wrapper py-5 communicate'>
             <img src={Communicate} alt="Communicate" className='mx-auto' />
+            <h3 className='product_title mt-5 mb-3'>Communicate — <span>VOIPElements</span></h3>
+            <Link to="">read more</Link>
           </div>
-          <div className='product__wrapper py-5 text-center run'>
+          <div className='product__wrapper py-5 run'>
             <img src={Run} alt="Run" className='mx-auto' />
+            <h3 className='product_title mt-5 mb-3'>Run — <span>ITElements</span></h3>
+            <Link to="">read more</Link>
           </div>
-          <div className='product__wrapper py-5 text-center protect'>
+          <div className='product__wrapper py-5 protect'>
             <img src={Protect} alt="Protect" className='mx-auto' />
+            <h3 className='product_title mt-5 mb-3'>Protect — <span>CloudElements</span></h3>
+            <Link to="">read more</Link>
           </div>
-          <div className='product__wrapper py-5 text-center automate'>
+          <div className='product__wrapper py-5 automate'>
             <img src={Automate} alt="Automate" className='mx-auto' />
+            <h3 className='product_title mt-5 mb-3'>Autommate — <span>GrowthElements</span></h3>
+            <Link to="">read more</Link>
           </div>
-          <div className='product__wrapper py-5 text-center future'>
+          <div className='product__wrapper py-5 future'>
             <img src={Future} alt="Future" className='mx-auto' />
+            <h3 className='product_title mt-5 mb-3'>Future — <span>IoTElements</span></h3>
+            <Link to="">read more</Link>
           </div>
         </Slider>
-      </div>
+    </div>
+    <Container fluid>
+        <Row className='justify-content-center'>
+          <Col xs={10} sm={10} md={10} lg={10} xl={8}>
+            <div className='mt-5 product-slider d-block d-md-none'>
+              <div className='product__wrapper py-5 communicate'>
+                  <img src={Communicate} alt="Communicate" className='mx-auto' />
+                  <h3 className='product_title mt-5 mb-3'>Communicate — <span>VOIPElements</span></h3>
+                  <Link to="">read more</Link>
+                </div>
+                <div className='product__wrapper py-5 run'>
+                  <img src={Run} alt="Run" className='mx-auto' />
+                  <h3 className='product_title mt-5 mb-3'>Run — <span>ITElements</span></h3>
+                  <Link to="">read more</Link>
+                </div>
+                <div className='product__wrapper py-5 protect'>
+                  <img src={Protect} alt="Protect" className='mx-auto' />
+                  <h3 className='product_title mt-5 mb-3'>Protect — <span>CloudElements</span></h3>
+                  <Link to="">read more</Link>
+                </div>
+                <div className='product__wrapper py-5 automate'>
+                  <img src={Automate} alt="Automate" className='mx-auto' />
+                  <h3 className='product_title mt-5 mb-3'>Autommate — <span>GrowthElements</span></h3>
+                  <Link to="">read more</Link>
+                </div>
+                <div className='product__wrapper py-5 future'>
+                  <img src={Future} alt="Future" className='mx-auto' />
+                  <h3 className='product_title mt-5 mb-3'>Future — <span>IoTElements</span></h3>
+                  <Link to="">read more</Link>
+                </div>
+            </div>
+          </Col>
+        </Row>
+    </Container>
+    </>
   )
 }
 

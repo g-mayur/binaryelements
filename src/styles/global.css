@@ -459,6 +459,58 @@ svg {
   background-repeat: no-repeat;
 }
 
+.product-slider .product__wrapper h3.product_title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+
+.product-slider .product__wrapper h3.product_title span {
+  font-weight: 700;
+}
+
+.product-slider .product__wrapper a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #EF791E;
+  text-decoration: none;
+}
+
+.product-slider button.slick-arrow {
+  position: absolute;
+  bottom: auto;
+  top: -250px;
+  transform: none;
+  width: 50px;
+  height: 48px;
+}
+
+.product-slider button.slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
+
+.product-slider button.slick-prev {
+  left: auto;
+  right: 10%;
+  background-image: url('../assets/companies/arrow-left.svg');
+  background-position: center;
+  background-size: contain;
+}
+
+.product-slider button.slick-next {
+  right: 5%;
+  background-image: url('../assets/companies/arrow-right.svg');
+  background-position: center;
+  background-size: contain;
+}
+
+.product-slider button.slick-arrow::before {
+  display: none;
+}
+
 /* FOOTER STYLING */
 .footer {
   background: #333333;
