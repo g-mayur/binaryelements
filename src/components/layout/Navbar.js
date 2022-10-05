@@ -9,7 +9,7 @@ import { navbar, menu__item } from "../../styles/home.module.css";
 import { Button } from "react-bootstrap";
 
 // Check if window is defined (so if in the browser or in node.js).
-const isBrowser = typeof window !== "undefined"
+// const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
   // if (!isBrowser) {
@@ -23,7 +23,6 @@ export default function MainNav() {
   window.onscroll = function () {
     if(window.innerWidth > 767)
     scrollFunction();
-    // console.log ('Test');
   };
 
   function scrollFunction() {
