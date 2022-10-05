@@ -1,6 +1,27 @@
 .navbar .menu__item {
     margin-right: 58px;
     text-decoration: none;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.navbar .menu__item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: 0%;
+}
+
+.navbar .menu__item:hover:after {
+    transition: all 0.5s ease;
+    transform: scaleX(1);
 }
 
 .voipElementsbg {
@@ -10,7 +31,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .itElementsbg {
@@ -20,7 +41,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .cloudElementsbg {
@@ -30,7 +51,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .growthElementsbg {
@@ -40,7 +61,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .iotElementsbg {
@@ -50,7 +71,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .logotext {
@@ -192,7 +213,7 @@
     .cloudElementsbg,
     .growthElementsbg,
     .iotElementsbg {
-        height: 1100px;
+        height: 100vh;
         padding: 10% 0 15%;
     }
 }
@@ -210,7 +231,7 @@
     .cloudElementsbg,
     .growthElementsbg,
     .iotElementsbg {
-        height: 1100px;
+        height: 100vh;
         padding: 10% 0 15%;
     }
 

@@ -28,8 +28,8 @@ const AsNavFor = () => {
    const Mainslider = {
       cssEase: 'linear',
       autoplay: true,
-      speed: 2500,
-      autoplaySpeed: 4000,
+      speed: 1000,
+      autoplaySpeed: 2500,
       infinite: true,
     }
     const Thumbslider = {
