@@ -8,7 +8,14 @@ import LogoSVG from "../../assets/logo.svg";
 import { navbar, menu__item } from "../../styles/home.module.css";
 import { Button } from "react-bootstrap";
 
+// Check if window is defined (so if in the browser or in node.js).
+const isBrowser = typeof window !== "undefined"
+
 export default function MainNav() {
+  if (!isBrowser) {
+    return;
+  }
+  
   var prevScrollpos = window.pageYOffset;
   const navRef = React.useRef(null);
   const MenuRef = React.useRef(null);
