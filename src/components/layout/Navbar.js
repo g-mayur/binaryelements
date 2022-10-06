@@ -12,9 +12,9 @@ import { Button } from "react-bootstrap";
 const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
-  // if (!isBrowser) {
-  //    return;
-  // }
+  if (!isBrowser) {
+     return;
+  }
   
   var prevScrollpos = window.pageYOffset;
   const navRef = React.useRef(null);
