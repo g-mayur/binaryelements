@@ -1,11 +1,16 @@
 import React from "react"
 import Layout from "../components/layout/Layout"
 import { Button, Col, Container, Form, Row, Stack } from "react-bootstrap"
-import {contactpage_holder, description__text, contact_details, label, businessunits_holder, contact_holder, contactform_holder, form_title, contact_form_wrapper, business_title} from "../styles/contact.module.css"
+import {contactpage_holder, description__text, contact_details, label, businessunits_holder, contact_holder, contactform_holder, form_title, contact_form_wrapper, business_title, b_unit_wrapper, units, units_logo, units_desc} from "../styles/contact.module.css"
 import SMSTrack from "../assets/contact/sms-tracking.svg"
 import PhoneCall from "../assets/contact/phone-call.svg"
 import LocationPin from "../assets/contact/location-pin.svg"
 // import { Link } from "gatsby"
+import voippecypcSVG from "../assets/heroslider/voippecypc.svg";
+import itpecypcSVG from "../assets/heroslider/itpecypc.svg";
+import cloudpecypcSVG from "../assets/heroslider/cloudpecypc.svg";
+import growthpecypcSVG from "../assets/heroslider/growthpecypc.svg";
+import iotpecypcSVG from "../assets/heroslider/iotpecypc.svg";
 
 export default function ContactUs() {
   return (
@@ -50,8 +55,81 @@ export default function ContactUs() {
                   which business units are you interested in?
                 </h3>
               </Col>
-              <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                <Form.Check.Label></Form.Check.Label>
+                {['radio'].map((type) => (
+                  <>
+                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
+                      <Form.Check type={type} id="inline-radio-1" className={`${units}`}>
+                        <Form.Check.Input type="radio" name="group1"/>
+                        <Form.Check.Label className={`${units_logo}`}>
+                          <img src={voippecypcSVG} alt="VOIP Elements" />
+                        </Form.Check.Label>
+                        <Form.Check.Label className={`${units_desc}`}>
+                          <h4 className="business_unit_name">VOIPElements</h4>
+                          <p>Join the digital revolution with a 3CX Cloud PBX securely hosted with VoipElements.</p>
+                        </Form.Check.Label>
+                      </Form.Check>
+                    </div>
+                  </Col>
+                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
+                      <Form.Check type={type} id="inline-radio-2" className={`${units}`}>
+                        <Form.Check.Input type="radio" name="group1"/>
+                        <Form.Check.Label className={`${units_logo}`}>
+                          <img src={itpecypcSVG} alt="VOIP Elements" />
+                        </Form.Check.Label>
+                        <Form.Check.Label className={`${units_desc}`}>
+                          <h4 className="business_unit_name">ITElements</h4>
+                          <p>Don't wait before it's too late. IT Elements have you covered.</p>
+                        </Form.Check.Label>
+                      </Form.Check>
+                    </div>
+                  </Col>
+                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
+                      <Form.Check type={type} id="inline-radio-3" className={`${units}`}>
+                        <Form.Check.Input type="radio" name="group1"/>
+                        <Form.Check.Label className={`${units_logo}`}>
+                          <img src={cloudpecypcSVG} alt="VOIP Elements" />
+                        </Form.Check.Label>
+                        <Form.Check.Label className={`${units_desc}`}>
+                          <h4 className="business_unit_name">CloudElements</h4>
+                          <p>It's never enough to be just one. Redundancy never fails.</p>
+                        </Form.Check.Label>
+                      </Form.Check>
+                    </div>
+                  </Col>
+                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
+                      <Form.Check type={type} id="inline-radio-4" className={`${units}`}>
+                        <Form.Check.Input type="radio" name="group1"/>
+                        <Form.Check.Label className={`${units_logo}`}>
+                          <img src={growthpecypcSVG} alt="VOIP Elements" />
+                        </Form.Check.Label>
+                        <Form.Check.Label className={`${units_desc}`}>
+                          <h4 className="business_unit_name">GrowthElements</h4>
+                          <p>Automate your SAP Business One processes with GrowthElements</p>
+                        </Form.Check.Label>
+                      </Form.Check>
+                    </div>
+                  </Col>
+                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
+                      <Form.Check type={type} id="inline-radio-5" className={`${units}`}>
+                        <Form.Check.Input type="radio" name="group1"/>
+                        <Form.Check.Label className={`${units_logo}`}>
+                          <img src={iotpecypcSVG} alt="VOIP Elements" />
+                        </Form.Check.Label>
+                        <Form.Check.Label className={`${units_desc}`}>
+                          <h4 className="business_unit_name">IoTElements</h4>
+                          <p>IoTElements delivers hardware and software solutions for new age technology integration with industrial hardware and software.</p>
+                        </Form.Check.Label>
+                      </Form.Check>
+                    </div>
+                  </Col>
+                  </>
+                ))}
+              {/* <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                 <Form.Check.Input type="radio" id="inline-radio-1" name="group1"/>
               </Col>
               <Col xs={12} sm={6} md={4} lg={3} xl={3}>
@@ -65,7 +143,7 @@ export default function ContactUs() {
               </Col>
               <Col xs={12} sm={6} md={4} lg={3} xl={3}>
                 <Form.Check.Input type="radio" id="inline-radio-5" name="group1" />
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
