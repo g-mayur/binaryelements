@@ -849,3 +849,18 @@ svg {
   bottom: 2rem;
   right: 2rem;
 }
+
+.process-item {
+  margin: 0 87px;
+  outline: none; 
+  /* width: 450px !important; */
+}
+
+.product-slide-inner-block {
+  width: 100%;
+  display: inline-block !important;
+}
+
+.gsap-marker-scroller-end, .gsap-marker-scroller-start {
+  display: none !important;
+}
