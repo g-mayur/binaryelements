@@ -9,7 +9,6 @@ import Automate from '../../assets/products/automate.png';
 import Future from '../../assets/products/future.png';
 import { Link } from 'gatsby';
 import { Col, Container, Row } from 'react-bootstrap';
-// import VoipElements from ""
 
 const Products = () => {
 const [slider,setSlider] = useState()
@@ -50,7 +49,7 @@ const [tempXScroll,setTempXScroll] = useState(0);
       if (tempYScroll == 1) {
         setTimeout(() => {
           window.scroll({
-            top: document.getElementById("section_3").offsetTop - 500,
+            top: document.getElementById("section_3").offsetTop - 300,
             behavior: 'smooth'
           });
           setTempYScroll(0);
