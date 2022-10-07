@@ -39,7 +39,7 @@ const Products = () => {
     // Pinning and horizontal scrolling
     gsap.to(".pin-wrap", {
       scrollTrigger: {
-        scrub: true,
+        scrub: 1,
         trigger: "#sectionPin",
         pin: true,
         pinSpacer: ".pin-spacer",
