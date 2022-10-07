@@ -864,3 +864,8 @@ svg {
 .gsap-marker-scroller-end, .gsap-marker-scroller-start {
   display: none !important;
 }
+.btn-style {
+  width: 100px;
+  margin: 20px auto;
+  cursor: pointer;
+}
