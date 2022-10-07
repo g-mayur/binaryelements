@@ -9,16 +9,20 @@ import { navbar, menu__item } from "../../styles/home.module.css";
 import { Button } from "react-bootstrap";
 
 // Check if window is defined (so if in the browser or in node.js).
-// const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
-  // if (!isBrowser) {
-  //    return;
-  // }
+  /* if (!isBrowser) {
+     return;
+  } */
   
   var prevScrollpos = window.pageYOffset;
   const navRef = React.useRef(null);
   const MenuRef = React.useRef(null);
+  
+  const urlValue = window.location.pathname
+
+  console.log("Navigation tav==>>",urlValue)
 
   window.onscroll = function () {
     if(window.innerWidth > 767)
@@ -90,24 +94,153 @@ export default function MainNav() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav
-                  className="header__menu justify-content-center flex-grow-1 pe-3"
-                  id="navbar"
-                >
-                  <Link className={menu__item} to="/about-us">
-                    About Us
-                  </Link>
-                  <Link className={menu__item} to="/contact-us">
-                    Contact Us
-                  </Link>
-                  <Link className={menu__item} to="/our-business-units">
-                    Our Business Units
-                  </Link>
-                  <Link className={menu__item} to="/updates">
-                    News Updates
-                  </Link>
-                </Nav>
-                {/* <Button>Our Business Units</Button> */}
+                {urlValue && urlValue === "/"?
+                  <Nav
+                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    id="navbar"
+                  >
+                    <Link className={menu__item} to="/about-us">
+                      About Us
+                    </Link>
+                    <Link className={menu__item} to="/contact-us">
+                      Contact Us
+                    </Link>
+                    <Link className={menu__item} to="/our-business-units">
+                      Our Business Units
+                    </Link>
+                    <Link className={menu__item} to="/updates">
+                      News Updates
+                    </Link>
+                  </Nav>
+                  :null
+                }
+                  
+                {urlValue && urlValue === "/contact-us"?
+                  <Nav
+                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    id="navbar"
+                  >
+                    <Link className={menu__item} to="/">
+                      home
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      pika@be
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      voice 3cx
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      services
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      updates
+                    </Link>
+                    <Link className={menu__item} to="/contact-us">
+                      contact
+                    </Link>
+                  </Nav>
+                  :null
+                  }
+
+                {urlValue && urlValue === "/business-units/voip-elements/"?
+                  <Nav
+                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    id="navbar"
+                  >
+                    <Link className={menu__item} to="/">
+                      3CX Cloud PBK
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      VOIP unlimited
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Special numbers
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Case Studies
+                    </Link>
+                  </Nav>
+                  :null
+                  }
+
+                {urlValue && urlValue === "/business-units/it-elements/"?
+                  <Nav
+                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    id="navbar"
+                  >
+                    <Link className={menu__item} to="/">
+                      Case Studies
+                    </Link>
+                  </Nav>
+                  :null
+                  }
+
+                {urlValue && urlValue === "/business-units/cloud-elements/"?
+                  <Nav
+                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    id="navbar"
+                  >
+                    <Link className={menu__item} to="/">
+                      Case Studies
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Data Redundancy
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Business Continuity
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Case Studies
+                    </Link>
+                  </Nav>
+                  :null
+                  }
+
+                {urlValue && urlValue === "/business-units/growth-elements/"?
+                  <Nav
+                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    id="navbar"
+                  >
+                    <Link className={menu__item} to="/">
+                      E-commerce
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Intercompany
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Sales Automation
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Vendor Automation
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Driver Delivery
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Custom Business App
+                    </Link>
+                  </Nav>
+                  :null
+                }
+
+                {urlValue && urlValue === "/business-units/iot-elements/"?
+                  <Nav
+                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    id="navbar"
+                  >
+                    <Link className={menu__item} to="/">
+                      Water Pressure
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Electical Charging
+                    </Link>
+                    <Link className={menu__item} to="/">
+                      Custom Design
+                    </Link>
+                  </Nav>
+                  :null
+                  }
+
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
