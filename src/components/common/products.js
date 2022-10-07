@@ -84,7 +84,7 @@ const Products = () => {
               className="d-flex flex-wrap col-6 col-sm-6 col-md-2 process-item process-item--nobefore product__wrapper py-5 communicate"
             >
               <div className="product-slide-inner-block">
-                <Link to="/">
+                <Link to="/business-units/voip-elements/">
                   <img
                     src={Communicate}
                     alt="Communicate"
@@ -105,7 +105,7 @@ const Products = () => {
               className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 run"
             >
               <div className="product-slide-inner-block">
-                <Link to="/">
+                <Link to="/business-units/it-elements/">
                   <img src={Run} alt="Run" className="mx-auto" />
                 </Link>
                 <h3 className="product_title mt-5 mb-3">
@@ -120,7 +120,7 @@ const Products = () => {
 
             <div className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 protect">
               <div className="product-slide-inner-block">
-                <Link to="/">
+                <Link to="/business-units/cloud-elements/">
                   <img src={Protect} alt="Protect" className="mx-auto" />
                 </Link>
                 <h3 className="product_title mt-5 mb-3">
@@ -135,7 +135,7 @@ const Products = () => {
 
             <div className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 automate">
               <div className="product-slide-inner-block">
-                <Link to="/">
+                <Link to="/business-units/growth-elements/">
                   <img src={Automate} alt="Automate" className="mx-auto" />
                 </Link>
                 <h3 className="product_title mt-5 mb-3">
@@ -150,7 +150,7 @@ const Products = () => {
 
             <div className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 future">
               <div className="product-slide-inner-block">
-                <Link to="/">
+                <Link to="/business-units/iot-elements/">
                   <img src={Future} alt="Future" className="mx-auto" />
                 </Link>
                 <h3 className="product_title mt-5 mb-3">
