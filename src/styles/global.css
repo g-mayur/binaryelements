@@ -180,10 +180,6 @@ svg {
   color: #000000;
 }
 
-.text-gray-900 {
-  color: #333333 !important;
-}
-
 .start__btn {
   font-family: "Figtree" !important;
   font-style: normal !important;
@@ -196,8 +192,48 @@ svg {
   height: 48px;
 }
 
+.text-gray-900 {
+  color: #333333 !important;
+}
+
+.text-gray-dark {
+  color: #411A23 !important;
+}
+
+.text-pink {
+  color: #E890A4 !important;
+}
+
+.text-yellow {
+  color: #FFEBAC !important;
+}
+
 .bg-orange {
   background: #ef791e !important;
+  border-radius: 80px !important;
+  border: none !important;
+}
+
+.bg-red {
+  background: #E4032F !important;
+  border-radius: 80px !important;
+  border: none !important;
+}
+
+.bg-pink {
+  background: #E890A4 !important;
+  border-radius: 80px !important;
+  border: none !important;
+}
+
+.bg-green {
+  background: #009F95 !important;
+  border-radius: 80px !important;
+  border: none !important;
+}
+
+.bg-yellow {
+  background: #FFEBAC !important;
   border-radius: 80px !important;
   border: none !important;
 }
@@ -301,6 +337,8 @@ svg {
   transition: all 0.4s ease;
 }
 
+/* HERO SLIDER */
+
 /* UPDATES */
 
 .updates_holder {
@@ -326,15 +364,6 @@ svg {
   background-repeat: no-repeat;
   z-index: -1;
 }
-
-/* .updates_holder .updates__slider_wrapper .slick-list {
-  margin: 0 -7px 0 0;
-  padding: 0 20% 0 0 !important;
-}
-
-.updates_holder .updates__slider_wrapper .slick-list .slick-slide {
-  margin: 0 7px 0 0;
-} */
 
 .updates_holder .updates__slider_wrapper .updates__wrapper {
   padding: 10px;
@@ -375,6 +404,30 @@ svg {
   text-decoration: none;
 }
 
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy_content h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #F2F2F2;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy_content .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F2F2F2;
+  max-width: 90%;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy_content a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A7FFDE;
+  text-decoration: none;
+}
+
 .updates_holder .updates__slider_wrapper button.slick-arrow {
   position: absolute;
   bottom: auto;
@@ -404,6 +457,162 @@ svg {
 }
 
 .updates_holder .updates__slider_wrapper button.slick-arrow::before {
+  display: none;
+}
+
+
+/******************************************************************* Business Units Case Study  *******************************************************************/
+
+.bucasestudy_holder .caseStudy_holder {
+  padding: 4% 0;
+  border-radius: 48px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.buproducts_holder .caseStudy_holder {
+  padding: 4% 0;
+  border-radius: 48px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* VOIP ELEMENTS */
+
+.bucasestudy_holder.voipelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/voip-casestudy.png");
+}
+
+.buproducts_holder.voipelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/voip-product.png");
+}
+
+/* IT ELEMENTS */
+
+.buproducts_holder.itelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/it-product.png");
+}
+
+.bucasestudy_holder.itelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/it-casestudy.png");
+}
+
+/* Cloud ELEMENTS */
+
+.buproducts_holder.cloudelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/cloud-product.png");
+}
+
+.bucasestudy_holder.cloudelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/cloud-casestudy.png");
+}
+
+/* Growth ELEMENTS */
+
+.buproducts_holder.growthelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/growth-product.png");
+}
+
+.bucasestudy_holder.growthelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/growth-casestudy.png");
+}
+
+/* IoT ELEMENTS */
+
+.buproducts_holder.iotelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/iot-product.png");
+}
+
+.bucasestudy_holder.iotelements .caseStudy_holder {
+  background-image: url("../assets/background-vectors/iot-casestudy.png");
+}
+
+/* ============================================ */
+
+.buproducts_holder .casestudy__slider_wrapper .slick-track {
+  display: flex;
+}
+
+.buproducts_holder .casestudy__slider_wrapper .slick-list {
+  margin: 0 -7px 0 72px;
+  padding: 0 4% 0 0 !important;
+  overflow: visible;
+}
+
+.buproducts_holder .casestudy__slider_wrapper .slick-list .slick-slide {
+  margin: 0 7px 0 0;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper {
+  padding: 15px;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy__img img {
+  border-radius: 24px;
+  width: 100%;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy_content h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #F2F2F2;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy_content .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F2F2F2;
+  max-width: 90%;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy_content a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A7FFDE;
+  text-decoration: none;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .slick-arrow {
+  position: absolute;
+  bottom: auto;
+  top: -110px;
+  transform: none;
+  width: 50px;
+  height: 48px;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .slick-prev {
+  left: auto;
+  right: 10%;
+  background-image: url("../assets/voipelements/arrow-left.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .slick-next {
+  right: 5%;
+  background-image: url("../assets/voipelements/arrow-right.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.caseStudy_holder .casestudy__slider_wrapper .slick-arrow::before {
   display: none;
 }
 
@@ -467,7 +676,7 @@ svg {
 
 .product-slider .slick-list {
   margin: 0 -27px;
-  padding-left: 0 20% 0 0 !important;
+  padding: 0 20% 0 0 !important;
 }
 
 .product-slider .slick-list .slick-slide {
@@ -619,6 +828,56 @@ svg {
 }
 
 @media only screen and (max-width: 767.98px) {
+  /* VOIP ELEMENTS */
+
+  .bucasestudy_holder.voipelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/voip-casestudy-mob.png");
+  }
+
+  .buproducts_holder.voipelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/voip-product-mob.png");
+  }
+
+  /* IT ELEMENTS */
+
+  .buproducts_holder.itelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/it-product-mob.png");
+  }
+
+  .bucasestudy_holder.itelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/it-casestudy-mob.png");
+  }
+
+  /* Cloud ELEMENTS */
+
+  .buproducts_holder.cloudelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/cloud-product-mob.png");
+  }
+
+  .bucasestudy_holder.cloudelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/cloud-casestudy-mob.png");
+  }
+
+  /* Growth ELEMENTS */
+
+  .buproducts_holder.growthelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/growth-product-mob.png");
+  }
+
+  .bucasestudy_holder.growthelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/growth-casestudy-mob.png");
+  }
+
+  /* IoT ELEMENTS */
+
+  .buproducts_holder.iotelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/iot-product-mob.png");
+  }
+
+  .bucasestudy_holder.iotelements .caseStudy_holder {
+    background-image: url("../assets/background-vectors/iot-casestudy-mob.png");
+  }
+
   .product-slider .product__wrapper {
     background-size: 400px !important;
   }
@@ -649,6 +908,32 @@ svg {
     line-height: 42px;
     letter-spacing: -0.03em;
     color: #f2f2f2;
+  }
+
+  .caseStudy_holder .casestudy__slider_wrapper .slick-arrow {
+    top: -80px;
+  }
+
+  .bucasestudy_holder .caseStudy_holder,
+  .buproducts_holder .caseStudy_holder {
+    padding: 15% 0;
+    border-radius: 24px;
+  }
+
+  .bucasestudy_holder .caseStudy_holder h2,
+  .buproducts_holder .caseStudy_holder h2 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .buproducts_holder .casestudy__slider_wrapper .slick-list {
+    margin: 0 -30px;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  .buproducts_holder .casestudy__slider_wrapper .slick-list .slick-slide {
+    margin: 0 10px;
   }
 
   /* NAVBAR Styling */
@@ -756,7 +1041,8 @@ svg {
     color: #333333;
   }
 
-  .updates_holder .updates__slider_wrapper button.slick-prev {
+  .updates_holder .updates__slider_wrapper button.slick-prev,
+  .caseStudy_holder .casestudy__slider_wrapper .slick-prev {
     right: 20%;
   }
 }
@@ -774,16 +1060,15 @@ svg {
     font-size: 14px;
   }
 
-  .updates__slider_wrapper {
-    margin: 0 30px;
-  }
-
-  .updates_holder {
+  .updates_holder,
+  .caseStudy_holder {
     padding: 10% 0;
     border-radius: 24px;
   }
 
-  .updates__slider_wrapper {
+  .updates__slider_wrapper,
+  .casestudy__slider_wrapper {
+    margin: 0 30px;
     padding-top: 10%;
   }
 }
@@ -852,7 +1137,7 @@ svg {
 
 .process-item {
   margin: 0 87px;
-  outline: none; 
+  outline: none;
   /* width: 450px !important; */
 }
 
@@ -861,7 +1146,8 @@ svg {
   display: inline-block !important;
 }
 
-.gsap-marker-scroller-end, .gsap-marker-scroller-start {
+.gsap-marker-scroller-end,
+.gsap-marker-scroller-start {
   display: none !important;
 }
 .btn-style {

@@ -1,0 +1,389 @@
+/* HERO BANNER */
+.voipElementsbg {
+  background-image: url('../assets/heroslider/voipElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
+.itElementsbg {
+  background-image: url('../assets/heroslider/itElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
+.cloudElementsbg {
+  background-image: url('../assets/heroslider/cloudElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
+.growthElementsbg {
+  background-image: url('../assets/heroslider/growthElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
+.iotElementsbg {
+  background-image: url('../assets/heroslider/iotElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
+.logotext {
+  margin-bottom: 32px;
+}
+
+.logotext p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2F2F2;
+}
+
+.logotext p span {
+  font-weight: 700;
+}
+
+.joinText {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #E0E0E0;
+  margin-bottom: 51px;
+}
+
+.joinBtn {
+  background: transparent !important;
+  border: none !important;
+}
+
+.joinBtn span {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F2F2F2;
+}
+
+/* VOIP ABOUT US */
+
+.aboutus__Wrapper {
+  padding: 150px 0;
+  border-radius: 48px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.aboutus__Wrapper h2 {
+  font-weight: 300;
+  font-size: 120px;
+  line-height: 130px;
+  letter-spacing: -0.05em;
+  color: #F2F2F2;
+  margin-bottom: 70px;
+}
+
+.aboutus__Wrapper h2 span {
+  font-weight: 700;
+}
+
+.aboutus__Wrapper p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #F2F2F2;
+  margin-bottom: 80px;
+}
+
+.aboutus__Wrapper .moreBtn {
+  background: #411A23 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 80px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #F2F2F2;
+  padding: 12px 30px;
+}
+
+.aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/about-us-vector.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* GETTING STARTED */
+.gettingstart_holder {
+  background-image: url('../assets/voipelements/getting-started.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}
+
+.gettingstart_holder h2 {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: -0.03em;
+  color: #F2F2F2;
+}
+
+.gettingstart_holder p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #F2F2F2;
+}
+
+/* VENTURE */
+.venture_holder {
+  background-image: url('../assets/voipelements/venture.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}
+
+.venture_holder h2 {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: -0.03em;
+  color: #F2F2F2;
+}
+
+.venture_holder p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #F2F2F2;
+}
+
+/* WHY ELEMENTS */
+
+.whyelements .whyTitle {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: -0.05em;
+  color: #F2F2F2;
+}
+
+.whyelements .whyTitle span {
+  font-weight: 700;
+}
+
+.whyelements .wrapper {
+  background: #4F4F4F;
+  border-radius: 24px;
+}
+
+.whyelements .wrapper h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #F2F2F2;
+}
+
+/* Voip Elements */
+
+.voipelements .aboutus__Wrapper {
+  background-image: url('../assets/background-vectors/voip-about.png');
+}
+
+/* IT Elements */
+
+.itelements .aboutus__Wrapper {
+  background-image: url('../assets/background-vectors/it-about.png');
+}
+
+.itelements .aboutus__Wrapper .moreBtn {
+  background: #E890A4 !important;
+  color: #411A23 !important;
+}
+
+.itelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/it-about-us-vector.svg');
+}
+
+.itelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/it-getting-started.png');
+}
+
+.itelements .venture_holder {
+  background-image: url('../assets/voipelements/spendtime.png');
+}
+
+/* Cloud Elements */
+
+.cloudelements .aboutus__Wrapper {
+  background-image: url('../assets/background-vectors/cloud-about.png');
+}
+
+.cloudelements .aboutus__Wrapper .moreBtn {
+  background: #F8B883 !important;
+  color: #411A23 !important;
+}
+
+.cloudelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/cloud-about-us-vector.svg');
+}
+
+.cloudelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/cloud-getting-started.png');
+}
+
+.cloudelements .venture_holder {
+  background-image: url('../assets/voipelements/cloudventure.png');
+}
+
+/* Growth Elements */
+
+.growthelements .aboutus__Wrapper {
+  background-image: url('../assets/background-vectors/growth-about.png');
+}
+
+.growthelements .aboutus__Wrapper .moreBtn {
+  background: #A7FFDE !important;
+  color: #411A23 !important;
+}
+
+.growthelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/growth-about-us-vector.svg');
+}
+
+.growthelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/growth-getting-started.png');
+}
+
+.growthelements .venture_holder {
+  background-image: url('../assets/voipelements/growthventure.png');
+}
+
+/* IoT Elements */
+
+.iotelements .aboutus__Wrapper {
+  background-image: url('../assets/background-vectors/iot-about.png');
+}
+
+.iotelements .aboutus__Wrapper .moreBtn {
+  background: #FFEBAC !important;
+  color: #411A23 !important;
+}
+
+.iotelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/growth-about-us-vector.svg');
+}
+
+.iotelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/iot-getting-started.png');
+}
+
+.iotelements .venture_holder {
+  background-image: url('../assets/voipelements/iotventure.png');
+}
+
+@media only screen and (max-width: 767.98px) {
+  /* Voip Elements */
+  .voipelements .aboutus__Wrapper {
+    background-image: url('../assets/background-vectors/voip-about-mob.png');
+  }
+
+  /* IT Elements */
+  .itelements .aboutus__Wrapper {
+    background-image: url('../assets/background-vectors/it-about-mob.png');
+  }
+
+  /* Cloud Elements */
+  .cloudelements .aboutus__Wrapper {
+    background-image: url('../assets/background-vectors/cloud-about-mob.png');
+  }
+
+  /* Growth Elements */
+  .growthelements .aboutus__Wrapper {
+    background-image: url('../assets/background-vectors/growth-about-mob.png');
+  }
+
+  /* IoT Elements */
+  .iotelements .aboutus__Wrapper {
+    background-image: url('../assets/background-vectors/iot-about-mob.png');
+  }
+
+  .aboutus__Wrapper {
+    padding: 50px 0;
+    border-radius: 24px;
+  }
+
+  .aboutus__Wrapper::before {
+    top: 45%;
+    background-size: contain;
+  }
+
+  .aboutus__Wrapper h2 {
+    font-size: 48px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  .aboutus__Wrapper p,
+  .gettingstart_holder p,
+  .venture_holder p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .mobile_order {
+    order: 2;
+    text-align: center;
+  }
+
+  .gettingstart_holder h2,
+  .venture_holder h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .whyelements .whyTitle {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .whyelements .wrapper {
+    padding: 30px !important;
+  }
+}
