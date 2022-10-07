@@ -12,17 +12,15 @@ import { Button } from "react-bootstrap";
 const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
-  /* if (!isBrowser) {
+  if (!isBrowser) {
      return;
-  } */
+  }
   
   var prevScrollpos = window.pageYOffset;
   const navRef = React.useRef(null);
   const MenuRef = React.useRef(null);
   
   const urlValue = window.location.pathname
-
-  console.log("Navigation tav==>>",urlValue)
 
   window.onscroll = function () {
     if(window.innerWidth > 767)

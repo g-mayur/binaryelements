@@ -8,11 +8,9 @@ import Future from "../../assets/products/future.png";
 import { Link } from "gatsby";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import VoipElements from ""
 
 const Products = () => {
   useLayoutEffect(() => {
-    console.log("useLayoutEffect");
     gsap.registerPlugin(ScrollTrigger);
 
     const pinBoxes = document.querySelectorAll(".pin-wrap > *");
@@ -24,13 +22,8 @@ const Products = () => {
     function refresh() {
       pinWrapWidth = pinWrap.scrollWidth;
       horizontalScrollLength = pinWrapWidth - window.innerWidth;
-      //console.log(pinWrapWidth);
     }
 
-    // if (document.readyState === "complete") {
-    //do nothing
-    // } else {
-    // window.addEventListener("load", function () {
     console.log("window load listener");
     refresh();
     gsap.registerEase("myEaseName", function (progress) {
@@ -56,24 +49,8 @@ const Products = () => {
     });
 
     ScrollTrigger.addEventListener("refreshInit", refresh);
-    // });
-    // }
   }, []);
-  // Next button
-  // nextButton.addEventListener("click", function () {
-  //   slideOneNext();
-  // });
-
-  /* // Previous button
-        function slideOnePrev() {
-          gsap.fromTo(targets[count], { xPercent: 0, zIndex: 10 }, {xPercent: 0, zIndex: 0 });
-          gsap.fromTo(targets[count], { xPercent: 0, zIndex: 0 }, { delay: 0, duration: 1.2, xPercent: 100, zIndex: -10 });
-          count = count < targets.length ? --count : 0;
-        }
-        prevButton.addEventListener("click", function() {
-          slideOnePrev();
-        }); */
-
+  
   return (
     <>
       <div className="pin-spacer product-slider mt-5">
