@@ -19,6 +19,36 @@
   height: 100vh;
 }
 
+.cloudElementsbg {
+  background-image: url('../assets/heroslider/cloudElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
+.growthElementsbg {
+  background-image: url('../assets/heroslider/growthElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
+.iotElementsbg {
+  background-image: url('../assets/heroslider/iotElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
 .logotext {
   margin-bottom: 32px;
 }
@@ -200,6 +230,8 @@
   color: #F2F2F2;
 }
 
+/* IT Elements */
+
 .itelements .aboutus__Wrapper {
   background-image: url('../assets/voipelements/itservice-bg.png');
 }
@@ -223,6 +255,89 @@
 
 .itelements .venture_holder {
   background-image: url('../assets/voipelements/spendtime.png');
+}
+
+/* Cloud Elements */
+
+.cloudelements .aboutus__Wrapper {
+  background-image: url('../assets/voipelements/cloudservice-bg.png');
+}
+
+.cloudelements .aboutus__Wrapper::before {
+  background-image: url('../assets/voipelements/cloudservice-vector.svg');
+}
+
+.cloudelements .aboutus__Wrapper .moreBtn {
+  background: #F8B883 !important;
+  color: #411A23;
+}
+
+.cloudelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/cloud-about-us-vector.svg');
+}
+
+.cloudelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/cloud-getting-started.png');
+}
+
+.cloudelements .venture_holder {
+  background-image: url('../assets/voipelements/cloudventure.png');
+}
+
+/* Growth Elements */
+
+.growthelements .aboutus__Wrapper {
+  background-image: url('../assets/voipelements/growth-about.png');
+}
+
+.growthelements .aboutus__Wrapper::before {
+  background-image: url('../assets/voipelements/cloudservice-vector.svg');
+  display: none;
+}
+
+.growthelements .aboutus__Wrapper .moreBtn {
+  background: #A7FFDE !important;
+  color: #411A23;
+}
+
+.growthelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/growth-about-us-vector.svg');
+}
+
+.growthelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/growth-getting-started.png');
+}
+
+.growthelements .venture_holder {
+  background-image: url('../assets/voipelements/growthventure.png');
+}
+
+/* IoT Elements */
+
+.iotelements .aboutus__Wrapper {
+  background-image: url('../assets/voipelements/growth-about.png');
+}
+
+.iotelements .aboutus__Wrapper::before {
+  background-image: url('../assets/voipelements/cloudservice-vector.svg');
+  display: none;
+}
+
+.iotelements .aboutus__Wrapper .moreBtn {
+  background: #A7FFDE !important;
+  color: #411A23;
+}
+
+.iotelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/growth-about-us-vector.svg');
+}
+
+.iotelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/iot-getting-started.png');
+}
+
+.iotelements .venture_holder {
+  background-image: url('../assets/voipelements/iotventure.png');
 }
 
 @media only screen and (max-width: 767.98px) {

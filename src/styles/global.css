@@ -204,6 +204,10 @@ svg {
   color: #E890A4 !important;
 }
 
+.text-yellow {
+  color: #FFEBAC !important;
+}
+
 .bg-orange {
   background: #ef791e !important;
   border-radius: 80px !important;
@@ -218,6 +222,18 @@ svg {
 
 .bg-pink {
   background: #E890A4 !important;
+  border-radius: 80px !important;
+  border: none !important;
+}
+
+.bg-green {
+  background: #009F95 !important;
+  border-radius: 80px !important;
+  border: none !important;
+}
+
+.bg-yellow {
+  background: #FFEBAC !important;
   border-radius: 80px !important;
   border: none !important;
 }
@@ -462,14 +478,14 @@ svg {
 .bucasestudy_holder .caseStudy_holder::before {
   content: "";
   position: absolute;
-  top: 220px;
-  width: 100%;
+  top: 280px;
+  width: 130%;
   height: 100%;
   background-image: url("../assets/voipelements/casestudy-vector.svg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .buproducts_holder .caseStudy_holder {
@@ -487,14 +503,14 @@ svg {
 .buproducts_holder .caseStudy_holder::before {
   content: "";
   position: absolute;
-  top: 220px;
-  width: 100%;
+  top: 280px;
+  width: 130%;
   height: 100%;
   background-image: url("../assets/voipelements/service-vector.svg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .buproducts_holder .casestudy__slider_wrapper .slick-track {
@@ -755,6 +771,42 @@ svg {
   background-image: url("../assets/voipelements/itcasestudy-vector.svg");
 }
 
+/* Cloud ELEMENTS */
+
+.buproducts_holder.cloudelements .caseStudy_holder {
+  background-image: url("../assets/voipelements/cloudproduct.png");
+}
+
+.buproducts_holder.cloudelements .caseStudy_holder::before {
+  background-image: url("../assets/voipelements/cloudproduct-vector.svg");
+}
+
+.bucasestudy_holder.cloudelements .caseStudy_holder {
+  background-image: url("../assets/voipelements/cloudproduct.png");
+}
+
+.bucasestudy_holder.cloudelements .caseStudy_holder::before {
+  background-image: url("../assets/voipelements/cloudcasestudy-vector.svg");
+}
+
+/* Growth ELEMENTS */
+
+.buproducts_holder.growthelements .caseStudy_holder {
+  background-image: url("../assets/voipelements/growth-products-bg.png");
+}
+
+.buproducts_holder.growthelements .caseStudy_holder::before {
+  display: none;
+}
+
+.bucasestudy_holder.growthelements .caseStudy_holder {
+  background-image: url("../assets/voipelements/growth-casestudy-bg.png");
+}
+
+.bucasestudy_holder.growthelements .caseStudy_holder::before {
+  display: none;
+}
+
 /* FOOTER STYLING */
 .footer {
   background: #333333;
@@ -854,7 +906,7 @@ svg {
   .bucasestudy_holder .caseStudy_holder::before {
     content: "";
     position: absolute;
-    top: 200px;
+    top: 20px;
     left: -100px;
     width: 200%;
     height: 100%;
@@ -871,6 +923,14 @@ svg {
   
   .bucasestudy_holder.itelements .caseStudy_holder::before {
     background-image: url("../assets/voipelements/itservice-mob-vector.svg");
+  }
+
+  .bucasestudy_holder.cloudelements .caseStudy_holder {
+    background-image: url("../assets/voipelements/cloudproduct-mob-bg.png");
+  }
+  
+  .bucasestudy_holder.cloudelements .caseStudy_holder::before {
+    background-image: url("../assets/voipelements/cloudproduct-mob.svg");
   }
 
   .caseStudy_holder .casestudy__slider_wrapper .slick-arrow {
