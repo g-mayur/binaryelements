@@ -19,7 +19,7 @@ import BrifcaseTick from "../../assets/svg/brifecase-tick.svg";
 const IotElements = () => {
   return (
     <Layout>
-      <div className={`${iotelements}`}>
+      <div className={`text-gray-900 ${iotelements}`}>
         <section className="HeroBanner">
           <div className={`hero__slider-img position-relative overlay d-flex align-items-end voipElementsbg ${iotElementsbg}`}>
                   <Container fluid>

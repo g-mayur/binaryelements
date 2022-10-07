@@ -48,7 +48,7 @@ const VoipServices = () => {
           ]
     }
   return (
-    <section className="buproducts_holder">
+    <section className="buproducts_holder voipelements">
         <div className="caseStudy_holder">
           <Container fluid>
               <Row>

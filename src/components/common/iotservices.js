@@ -46,12 +46,12 @@ const IotServices = () => {
           ]
     }
   return (
-    <section className="buproducts_holder iotlements">
+    <section className="buproducts_holder iotelements">
         <div className="caseStudy_holder">
           <Container fluid>
               <Row>
                   <Col xs={12} sm={12} md={10} lg={10} xl={8}>
-                      <h2 className="H2 text-white">
+                      <h2 className="H2 text-gray-900">
                           Our Products and Services
                       </h2>
                   </Col>
@@ -64,8 +64,8 @@ const IotServices = () => {
                           <img src={PSImage1} alt="SSS Auto" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>Water Pressure Manager</h4>
-                          <p className="description mb-3">Regulate and control your water pressure in your building and home, controlled by our cloud app. Monitor readings and trigger alerts.</p>
+                          <h4 className='title mb-3 text-gray-900'>Water Pressure Manager</h4>
+                          <p className="description mb-3 text-gray-900">Regulate and control your water pressure in your building and home, controlled by our cloud app. Monitor readings and trigger alerts.</p>
                           <Link to="" className='text-yellow'>read more</Link>
                       </div>
                   </div>
@@ -74,8 +74,8 @@ const IotServices = () => {
                           <img src={PSImage2} alt="DJI" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>Custom IoT Hardware and Apps</h4>
-                          <p className="description mb-3">From the hardware, circuitry and electrical components design as well as Cloud apps. Total process management from idea to implementation.</p>
+                          <h4 className='title mb-3 text-gray-900'>Custom IoT Hardware and Apps</h4>
+                          <p className="description mb-3 text-gray-900">From the hardware, circuitry and electrical components design as well as Cloud apps. Total process management from idea to implementation.</p>
                           <Link to="" className='text-yellow'>read more</Link>
                       </div>
                   </div>
@@ -84,8 +84,8 @@ const IotServices = () => {
                           <img src={PSImage1} alt="SSS Auto" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>Water Pressure Manager</h4>
-                          <p className="description mb-3">Regulate and control your water pressure in your building and home, controlled by our cloud app. Monitor readings and trigger alerts.</p>
+                          <h4 className='title mb-3 text-gray-900'>Water Pressure Manager</h4>
+                          <p className="description mb-3 text-gray-900">Regulate and control your water pressure in your building and home, controlled by our cloud app. Monitor readings and trigger alerts.</p>
                           <Link to="" className='text-yellow'>read more</Link>
                       </div>
                   </div>
@@ -94,8 +94,8 @@ const IotServices = () => {
                           <img src={PSImage2} alt="DJI" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>Custom IoT Hardware and Apps</h4>
-                          <p className="description mb-3">From the hardware, circuitry and electrical components design as well as Cloud apps. Total process management from idea to implementation.</p>
+                          <h4 className='title mb-3 text-gray-900'>Custom IoT Hardware and Apps</h4>
+                          <p className="description mb-3 text-gray-900">From the hardware, circuitry and electrical components design as well as Cloud apps. Total process management from idea to implementation.</p>
                           <Link to="" className='text-yellow'>read more</Link>
                       </div>
                   </div>

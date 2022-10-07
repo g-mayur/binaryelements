@@ -55,7 +55,7 @@ const VoipCasestudy = () => {
           ]
     }
   return (
-    <section className="bucasestudy_holder">
+    <section className="bucasestudy_holder voipelements">
         <div className="caseStudy_holder">
           <Container fluid>
               <Row>
