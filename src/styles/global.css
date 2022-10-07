@@ -200,6 +200,10 @@ svg {
   color: #411A23 !important;
 }
 
+.text-pink {
+  color: #E890A4 !important;
+}
+
 .bg-orange {
   background: #ef791e !important;
   border-radius: 80px !important;
@@ -442,7 +446,6 @@ svg {
 
 
 /******************************************************************* Business Units Case Study  *******************************************************************/
-/* UPDATES */
 
 .bucasestudy_holder .caseStudy_holder {
   padding: 4% 0;
@@ -734,6 +737,24 @@ svg {
   display: none;
 }
 
+/* IT ELEMENTS */
+
+.buproducts_holder.itelements .caseStudy_holder {
+  background-image: url("../assets/voipelements/itservice-bg.png");
+}
+
+.buproducts_holder.itelements .caseStudy_holder::before {
+  background-image: url("../assets/voipelements/itservice-vector.svg");
+}
+
+.bucasestudy_holder.itelements .caseStudy_holder {
+  background-image: url("../assets/voipelements/itcasestudy-bg.png");
+}
+
+.bucasestudy_holder.itelements .caseStudy_holder::before {
+  background-image: url("../assets/voipelements/itcasestudy-vector.svg");
+}
+
 /* FOOTER STYLING */
 .footer {
   background: #333333;
@@ -817,7 +838,6 @@ svg {
     color: #f2f2f2;
   }
 
-  .bucasestudy_holder .caseStudy_holder,
   .bucasestudy_holder .caseStudy_holder {
     padding: 4% 0;
     border-radius: 48px;
@@ -843,6 +863,14 @@ svg {
     background-repeat: no-repeat;
     z-index: -1;
     transform: scale(1);
+  }
+
+  .bucasestudy_holder.itelements .caseStudy_holder {
+    background-image: url("../assets/voipelements/itservice-mob-bg.png");
+  }
+  
+  .bucasestudy_holder.itelements .caseStudy_holder::before {
+    background-image: url("../assets/voipelements/itservice-mob-vector.svg");
   }
 
   .caseStudy_holder .casestudy__slider_wrapper .slick-arrow {
@@ -1072,7 +1100,7 @@ svg {
 
 .process-item {
   margin: 0 87px;
-  outline: none; 
+  outline: none;
   /* width: 450px !important; */
 }
 
@@ -1081,6 +1109,7 @@ svg {
   display: inline-block !important;
 }
 
-.gsap-marker-scroller-end, .gsap-marker-scroller-start {
+.gsap-marker-scroller-end,
+.gsap-marker-scroller-start {
   display: none !important;
 }

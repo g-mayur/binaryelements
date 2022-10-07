@@ -1,13 +1,13 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Slider from "react-slick";
-import PSImage1 from "../../assets/voipelements/voip-product1.png";
-import PSImage2 from "../../assets/voipelements/voip-product2.png";
-import PSImage3 from "../../assets/voipelements/voip-product3.png";
-import PSImage4 from "../../assets/voipelements/voip-product4.png";
+import PSImage1 from "../../assets/voipelements/it-product1.png";
+import PSImage2 from "../../assets/voipelements/it-product2.png";
+import PSImage3 from "../../assets/voipelements/it-product3.png";
+import PSImage4 from "../../assets/voipelements/it-product4.png";
 import { Link } from "gatsby";
 
-const VoipServices = () => {
+const ITServices = () => {
     const voipserviceSlider = {
         slidesToShow: 3.5,
         slidesToScroll: 1,
@@ -48,7 +48,7 @@ const VoipServices = () => {
           ]
     }
   return (
-    <section className="buproducts_holder">
+    <section className="buproducts_holder itelements">
         <div className="caseStudy_holder">
           <Container fluid>
               <Row>
@@ -66,9 +66,9 @@ const VoipServices = () => {
                           <img src={PSImage1} alt="SSS Auto" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>3CX Cloud PBX</h4>
-                          <p className="description mb-3">Enterprise grade VOIP phone system with features such as Queues, Ring Groups, call routing as well as Messaging, Online meetings and video conferencing.</p>
-                          <Link to="">read more</Link>
+                          <h4 className='title mb-3'>Connectivity</h4>
+                          <p className="description mb-3">Enterprise grade NBN, Fibre and 5G connections for your business. Designed to connect back to base and connect out to the internet.</p>
+                          <Link to="" className='text-pink'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -76,9 +76,9 @@ const VoipServices = () => {
                           <img src={PSImage2} alt="DJI" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>Unlimited VOIP Trunks</h4>
-                          <p className="description mb-3">Available for any SIP based VOIP phone system such as Asterisk, Freeswitch, CISCO, Avaya and others.</p>
-                          <Link to="">read more</Link>
+                          <h4 className='title mb-3'>Networks</h4>
+                          <p className="description mb-3">Ensuring coverage physically and virtual environment. Security conscious and deployment ready.</p>
+                          <Link to="" className='text-pink'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -86,9 +86,9 @@ const VoipServices = () => {
                           <img src={PSImage3} alt="Mr. Burger" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>Mobile Numbers</h4>
-                          <p className="description mb-3">Call out and receive calls with Mobile numbers. Allowing for better connects and pick ups by customers.</p>
-                          <Link to="">read more</Link>
+                          <h4 className='title mb-3'>Microsoft 365 Migration and Deployment</h4>
+                          <p className="description mb-3">Let us handle migration and deployment of your MS 365 needs.</p>
+                          <Link to="" className='text-pink'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -96,9 +96,9 @@ const VoipServices = () => {
                           <img src={PSImage4} alt="13/1300 and 1800 Numbers" />
                       </div>
                       <div className="casestudy_content">
-                          <h4 className='title mb-3'>13/1300 and 1800 Numbers</h4>
-                          <p className="description mb-3">Get vanity numbers such as 13 FINANCE or a 13/1300/1800 number for customers to easily remember and call.</p>
-                          <Link to="">read more</Link>
+                          <h4 className='title mb-3'>Veeam and Microsoft SPLA partner</h4>
+                          <p className="description mb-3">Pay by usage instead of purchasing entire license.  Always know your software licensing is compliant.</p>
+                          <Link to="" className='text-pink'>read more</Link>
                       </div>
                   </div>
               </Slider>
@@ -108,4 +108,4 @@ const VoipServices = () => {
   )
 }
 
-export default VoipServices;
+export default ITServices;
