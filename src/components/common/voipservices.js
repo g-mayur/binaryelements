@@ -1,22 +1,19 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Slider from "react-slick";
-import CSImage1 from "../../assets/voipelements/casestudy-img1.png";
-import CSImage2 from "../../assets/voipelements/casestudy-img2.png";
-import CSImage3 from "../../assets/voipelements/casestudy-img3.png";
-import CSImage4 from "../../assets/voipelements/casestudy-img4.png";
+import PSImage1 from "../../assets/voipelements/voip-product1.png";
+import PSImage2 from "../../assets/voipelements/voip-product2.png";
+import PSImage3 from "../../assets/voipelements/voip-product3.png";
+import PSImage4 from "../../assets/voipelements/voip-product4.png";
 import { Link } from "gatsby";
 
-const VoipCasestudy = () => {
-    const voipcasestudySlider = {
-        slidesToShow: 3,
+const VoipServices = () => {
+    const voipserviceSlider = {
+        slidesToShow: 3.5,
         slidesToScroll: 1,
         cssEase: 'linear',
         arrows: true,
         speed: 1500,
-        centerMode: true,
-        centerPadding: "60px",
-        vertical: false,
         infinite: false,
         initialSlide: 0,
         responsive: [
@@ -39,8 +36,6 @@ const VoipCasestudy = () => {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: false,
-                centerPadding: "0",
               }
             },
             {
@@ -48,29 +43,27 @@ const VoipCasestudy = () => {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: false,
-                centerPadding: "0",
               }
             }
           ]
     }
   return (
-    <section className="voipcasestudy_holder">
+    <section className="buproducts_holder">
         <div className="caseStudy_holder">
           <Container fluid>
               <Row>
                   <Col xs={12} sm={12} md={10} lg={10} xl={8}>
                       <h2 className="H2 text-white">
-                          Case Study
+                          Our Products and Services
                       </h2>
                   </Col>
               </Row>
           </Container>
           <div className="mt-5 casestudy__slider_wrapper">
-              <Slider {...voipcasestudySlider}>
-                  <div className="casestudy__wrapper">
+              <Slider {...voipserviceSlider}>
+                  <div className="casestudy__wrapper" style={{margin: '0 auto'}}>
                       <div className="casestudy__img mb-4">
-                          <img src={CSImage1} alt="SSS Auto" />
+                          <img src={PSImage1} alt="SSS Auto" />
                       </div>
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>SSS Auto</h4>
@@ -80,7 +73,7 @@ const VoipCasestudy = () => {
                   </div>
                   <div className="casestudy__wrapper">
                       <div className="casestudy__img mb-4">
-                          <img src={CSImage2} alt="DJI" />
+                          <img src={PSImage2} alt="DJI" />
                       </div>
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>DJI</h4>
@@ -90,7 +83,7 @@ const VoipCasestudy = () => {
                   </div>
                   <div className="casestudy__wrapper">
                       <div className="casestudy__img mb-4">
-                          <img src={CSImage3} alt="Mr. Burger" />
+                          <img src={PSImage3} alt="Mr. Burger" />
                       </div>
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Mr. Burger</h4>
@@ -100,7 +93,7 @@ const VoipCasestudy = () => {
                   </div>
                   <div className="casestudy__wrapper">
                       <div className="casestudy__img mb-4">
-                          <img src={CSImage4} alt="13/1300 and 1800 Numbers" />
+                          <img src={PSImage4} alt="13/1300 and 1800 Numbers" />
                       </div>
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>13/1300 and 1800 Numbers</h4>
@@ -115,4 +108,4 @@ const VoipCasestudy = () => {
   )
 }
 
-export default VoipCasestudy;
+export default VoipServices;

@@ -9,6 +9,16 @@
   height: 100vh;
 }
 
+.itElementsbg {
+  background-image: url('../assets/heroslider/itElements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0 5%;
+  z-index: 0;
+  height: 100vh;
+}
+
 .logotext {
   margin-bottom: 32px;
 }
@@ -46,7 +56,7 @@
   color: #F2F2F2;
 }
 
-/* ABOUT US */
+/* VOIP ABOUT US */
 
 .aboutus__Wrapper {
   padding: 100px 0;
@@ -188,4 +198,68 @@
   line-height: 32px;
   letter-spacing: -0.02em;
   color: #F2F2F2;
+}
+
+.itelements .aboutus__Wrapper {
+  background-image: url('../assets/voipelements/itservice-bg.png');
+}
+
+.itelements .aboutus__Wrapper::before {
+  background-image: url('../assets/voipelements/itservice-vector.svg');
+}
+
+.itelements .aboutus__Wrapper .moreBtn {
+  background: #E890A4 !important;
+  color: #411A23;
+}
+
+.itelements .aboutus__Wrapper .aboutus__img {
+  background-image: url('../assets/voipelements/it-about-us-vector.svg');
+}
+
+.itelements .gettingstart_holder {
+  background-image: url('../assets/voipelements/it-getting-started.png');
+}
+
+@media only screen and (max-width: 767.98px) {
+  .aboutus__Wrapper {
+    border-radius: 24px;
+  }
+  .aboutus__Wrapper::before  {
+    top: 45%;
+    background-size: contain;
+  }
+  .aboutus__Wrapper h2 {
+    font-size: 48px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  .aboutus__Wrapper p,
+  .gettingstart_holder p,
+  .venture_holder p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .mobile_order {
+    order: 2;
+    text-align: center;
+  }
+  .gettingstart_holder h2,
+  .venture_holder h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .whyelements .whyTitle {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .whyelements .wrapper {
+    padding: 30px !important;
+  }
 }
