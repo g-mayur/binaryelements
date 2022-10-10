@@ -901,6 +901,12 @@ svg {
   }
 }
 
+@media only screen and (min-width: 1199.98px) and (max-width: 1599.98px) {
+  .header__menu a {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024.98px) {
   .container-fluid {
     width: calc(100% - 48px) !important;
