@@ -23,7 +23,7 @@ export default function MainNav() {
   const urlValue = window.location.pathname
 
   window.onscroll = function () {
-    if(window.innerWidth > 767)
+    // if(window.innerWidth > 767)
     scrollFunction();
   };
 
@@ -113,7 +113,7 @@ export default function MainNav() {
                   :null
                 }
                   
-                {urlValue && urlValue === "/contact-us"?
+                {urlValue && urlValue.includes("/contact-us")?
                   <Nav
                     className="header__menu justify-content-center flex-grow-1 pe-3"
                     id="navbar"
@@ -140,7 +140,7 @@ export default function MainNav() {
                   :null
                   }
 
-                {urlValue && urlValue === "/business-units/voip-elements/"?
+                {urlValue && urlValue.includes("/business-units/voip-elements")?
                   <Nav
                     className="header__menu justify-content-center flex-grow-1 pe-3"
                     id="navbar"
@@ -161,7 +161,7 @@ export default function MainNav() {
                   :null
                   }
 
-                {urlValue && urlValue === "/business-units/it-elements/"?
+                {urlValue && urlValue.includes("/business-units/it-elements")?
                   <Nav
                     className="header__menu justify-content-center flex-grow-1 pe-3"
                     id="navbar"
@@ -173,7 +173,7 @@ export default function MainNav() {
                   :null
                   }
 
-                {urlValue && urlValue === "/business-units/cloud-elements/"?
+                {urlValue && urlValue.includes("/business-units/cloud-elements")?
                   <Nav
                     className="header__menu justify-content-center flex-grow-1 pe-3"
                     id="navbar"
@@ -194,7 +194,7 @@ export default function MainNav() {
                   :null
                   }
 
-                {urlValue && urlValue === "/business-units/growth-elements/"?
+                {urlValue && urlValue.includes("/business-units/growth-elements")?
                   <Nav
                     className="header__menu justify-content-center flex-grow-1 pe-3"
                     id="navbar"
@@ -221,7 +221,7 @@ export default function MainNav() {
                   :null
                 }
 
-                {urlValue && urlValue === "/business-units/iot-elements/"?
+                {urlValue && urlValue.includes("/business-units/iot-elements")?
                   <Nav
                     className="header__menu justify-content-center flex-grow-1 pe-3"
                     id="navbar"

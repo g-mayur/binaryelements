@@ -1,5 +1,6 @@
 import React from "react";
 import { useLayoutEffect } from "react";
+import {  Col, Container, Row, } from "react-bootstrap"
 import Communicate from "../../assets/products/communicate.png";
 import Run from "../../assets/products/run.png";
 import Protect from "../../assets/products/protect.png";
@@ -53,7 +54,7 @@ const Products = () => {
   
   return (
     <>
-      <div className="pin-spacer product-slider mt-5">
+      <div className="pin-spacer product-slider mt-5 d-none d-lg-block">
         <div id="sectionPin">
           <div className="row d-flex flex-nowrap py-70 pin-wrap">
             <div
@@ -116,7 +117,7 @@ const Products = () => {
                   <img src={Automate} alt="Automate" className="mx-auto" />
                 </Link>
                 <h3 className="product_title mt-5 mb-3">
-                  Autommate — <span>GrowthElements</span>
+                  Automate — <span>GrowthElements</span>
                 </h3>
                 <p className="product__description">
                   Curabitur aliquet quam id dui posuere blandit. Vivamus
@@ -142,6 +143,41 @@ const Products = () => {
           </div>
         </div>
       </div>
+
+      <Container fluid>
+        <Row className='justify-content-center'>
+          <Col xs={10} sm={10} md={10} lg={10} xl={8}>
+            <div className='mt-5 product-slider d-block d-md-none'>
+              <div className='product__wrapper py-5 communicate'>
+                <Link to="/business-units/voip-elements/"><img src={Communicate} alt="Communicate" className='mx-auto' /></Link>
+                <h3 className='product_title mt-5 mb-3'>Communicate — <span>VOIPElements</span></h3>
+                <p className='product__description'>Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+              </div>
+            <div className='product__wrapper py-5 run'>
+                <Link to="/business-units/it-elements/"><img src={Run} alt="Run" className='mx-auto' /></Link>
+                <h3 className='product_title mt-5 mb-3'>Run — <span>ITElements</span></h3>
+                <p className='product__description'>Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+              </div>
+            <div className='product__wrapper py-5 protect'>
+                <Link to="/business-units/cloud-elements/"><img src={Protect} alt="Protect" className='mx-auto' /></Link>
+                <h3 className='product_title mt-5 mb-3'>Protect — <span>CloudElements</span></h3>
+                <p className='product__description'>Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+              </div>
+            <div className='product__wrapper py-5 automate'>
+                <Link to="/business-units/growth-elements/"><img src={Automate} alt="Automate" className='mx-auto' /></Link>
+                <h3 className='product_title mt-5 mb-3'>Automate — <span>GrowthElements</span></h3>
+                <p className='product__description'>Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+              </div>
+            <div className='product__wrapper py-5 future'>
+                <Link to="/business-units/iot-elements/"><img src={Future} alt="Future" className='mx-auto' /></Link>
+                <h3 className='product_title mt-5 mb-3'>Future — <span>IoTElements</span></h3>
+                <p className='product__description'>Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+              </div>
+            </div>
+          </Col>
+        </Row>
+    </Container>
+
     </>
   );
 };

@@ -11,8 +11,11 @@ import itpecypcSVG from "../assets/heroslider/itpecypc.svg";
 import cloudpecypcSVG from "../assets/heroslider/cloudpecypc.svg";
 import growthpecypcSVG from "../assets/heroslider/growthpecypc.svg";
 import iotpecypcSVG from "../assets/heroslider/iotpecypc.svg";
+import data from "../jsonData/contact-us.json"
+import {VOIPElements,ITElements,CloudElements,GrowthElements,IoTElements} from "../jsonData/contact-us.js";
 
 export default function ContactUs() {
+  console.log("ContactUs data==>",data.map((i,k)=>i.title))
   return (
     <Layout>
       <section className={`overlay position-relative ${contactpage_holder}`}>
@@ -46,8 +49,10 @@ export default function ContactUs() {
             </Row>
           </Container>
       </section>
+      
       <section className={`position-relative ${contact_holder}`}>
         <div className={`position-relative ${businessunits_holder}`}>
+        
           <Container fluid>
             <Row>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -55,6 +60,7 @@ export default function ContactUs() {
                   which business units are you interested in?
                 </h3>
               </Col>
+              
                 {['radio'].map((type) => (
                   <>
                   <Col xs={12} sm={6} md={4} lg={3} xl={3}>
@@ -65,8 +71,8 @@ export default function ContactUs() {
                           <img src={voippecypcSVG} alt="VOIP Elements" />
                         </Form.Check.Label>
                         <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">VOIPElements</h4>
-                          <p>Join the digital revolution with a 3CX Cloud PBX securely hosted with VoipElements.</p>
+                          <h4 className="business_unit_name">{VOIPElements.title}</h4>
+                          <p>{VOIPElements.description}</p>
                         </Form.Check.Label>
                       </Form.Check>
                     </div>
@@ -79,8 +85,8 @@ export default function ContactUs() {
                           <img src={itpecypcSVG} alt="VOIP Elements" />
                         </Form.Check.Label>
                         <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">ITElements</h4>
-                          <p>Don't wait before it's too late. IT Elements have you covered.</p>
+                          <h4 className="business_unit_name">{ITElements.title}</h4>
+                          <p>{ITElements.description}</p>
                         </Form.Check.Label>
                       </Form.Check>
                     </div>
@@ -93,8 +99,8 @@ export default function ContactUs() {
                           <img src={cloudpecypcSVG} alt="VOIP Elements" />
                         </Form.Check.Label>
                         <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">CloudElements</h4>
-                          <p>It's never enough to be just one. Redundancy never fails.</p>
+                          <h4 className="business_unit_name">{CloudElements.title}</h4>
+                          <p>{CloudElements.description}</p>
                         </Form.Check.Label>
                       </Form.Check>
                     </div>
@@ -107,8 +113,8 @@ export default function ContactUs() {
                           <img src={growthpecypcSVG} alt="VOIP Elements" />
                         </Form.Check.Label>
                         <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">GrowthElements</h4>
-                          <p>Automate your SAP Business One processes with GrowthElements</p>
+                          <h4 className="business_unit_name">{GrowthElements.title}</h4>
+                          <p>{GrowthElements.description}</p>
                         </Form.Check.Label>
                       </Form.Check>
                     </div>
@@ -121,8 +127,8 @@ export default function ContactUs() {
                           <img src={iotpecypcSVG} alt="VOIP Elements" />
                         </Form.Check.Label>
                         <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">IoTElements</h4>
-                          <p>IoTElements delivers hardware and software solutions for new age technology integration with industrial hardware and software.</p>
+                          <h4 className="business_unit_name">{IoTElements.title}</h4>
+                          <p>{IoTElements.description}</p>
                         </Form.Check.Label>
                       </Form.Check>
                     </div>
