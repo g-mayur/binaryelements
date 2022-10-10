@@ -74,7 +74,7 @@ const Updates = () => {
                         <p className='meta mb-2'>August 8, 2022</p>
                         <h4 className='title mb-3'>Updates to our operations</h4>
                         <p className='description mb-3'>Start of the year is generally a busy period. Lots of projects running and getting it up to date. For the end of month in Feb, here's an update of what we've been up to.</p>
-                        <Link to="">read more</Link>
+                        <Link>read more</Link>
                     </div>
                 </div>
                 <div className='updates__wrapper'>
@@ -85,7 +85,7 @@ const Updates = () => {
                         <p className='meta mb-2'>May 1, 2022</p>
                         <h4 className='title mb-3'>Updates to pike@be Q3/Q4 2022</h4>
                         <p className='description mb-3'>An update for be@pike Q3/Q4 2022</p>
-                        <Link to="">read more</Link>
+                        <Link>read more</Link>
                     </div>
                 </div>
                 <div className='updates__wrapper'>
@@ -96,7 +96,7 @@ const Updates = () => {
                         <p className='meta mb-2'>March 14, 2022</p>
                         <h4 className='title mb-3'>Updates to pike@be Q3/Q4 2022</h4>
                         <p className='description mb-3'>An update for be@pike Q3/Q4 2022</p>
-                        <Link to="">read more</Link>
+                        <Link>read more</Link>
                     </div>
                 </div>
                 <div className='updates__wrapper'>
@@ -107,7 +107,7 @@ const Updates = () => {
                         <p className='meta mb-2'>August 8, 2022</p>
                         <h4 className='title mb-3'>Updates to our operations</h4>
                         <p className='description mb-3'>Start of the year is generally a busy period. Lots of projects running and getting it up to date. For the end of month in Feb, here's an update of what we've been up to.</p>
-                        <Link to="">read more</Link>
+                        <Link>read more</Link>
                     </div>
                 </div>
                 <div className='updates__wrapper'>
@@ -118,7 +118,7 @@ const Updates = () => {
                         <p className='meta mb-2'>May 1, 2022</p>
                         <h4 className='title mb-3'>Updates to pike@be Q3/Q4 2022</h4>
                         <p className='description mb-3'>An update for be@pike Q3/Q4 2022</p>
-                        <Link to="">read more</Link>
+                        <Link>read more</Link>
                     </div>
                 </div>
                 <div className='updates__wrapper'>
@@ -129,7 +129,7 @@ const Updates = () => {
                         <p className='meta mb-2'>March 14, 2022</p>
                         <h4 className='title mb-3'>Updates to pike@be Q3/Q4 2022</h4>
                         <p className='description mb-3'>An update for be@pike Q3/Q4 2022</p>
-                        <Link to="">read more</Link>
+                        <Link>read more</Link>
                     </div>
                 </div>
             </Slider>

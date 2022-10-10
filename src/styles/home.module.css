@@ -31,7 +31,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 100vh;
+    height: 1100px;
 }
 
 .itElementsbg {
@@ -41,7 +41,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 100vh;
+    height: 1100px;
 }
 
 .cloudElementsbg {
@@ -51,7 +51,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 100vh;
+    height: 1100px;
 }
 
 .growthElementsbg {
@@ -61,7 +61,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 100vh;
+    height: 1100px;
 }
 
 .iotElementsbg {
@@ -71,7 +71,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 100vh;
+    height: 1100px;
 }
 
 .logotext {
@@ -211,6 +211,16 @@
 @media only screen and (max-width: 1900.98px) {
     .product_service {
         height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1799.98px) {
+    .voipElementsbg,
+    .itElementsbg,
+    .cloudElementsbg,
+    .growthElementsbg,
+    .iotElementsbg {
+        height: 100vh;
     }
 }
 
