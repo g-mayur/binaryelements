@@ -18,7 +18,7 @@ const Updates = () => {
         vertical: false,
         infinite: false,
         initialSlide: 0,
-        responsive: [
+		responsive: [
             {
                 breakpoint: 1200,
                 settings: {
@@ -131,6 +131,8 @@ const Updates = () => {
                         <p className='description mb-3'>An update for be@pike Q3/Q4 2022</p>
                         <Link>read more</Link>
                     </div>
+                </div>
+                <div className='updates__wrapper'>
                 </div>
             </Slider>
         </div>

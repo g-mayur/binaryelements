@@ -108,6 +108,8 @@ const IotCasestudy = () => {
                           <Link to="" className='text-yellow'>read more</Link>
                       </div>
                   </div>
+                  <div className='casestudy__wrapper'>
+                  </div>
               </Slider>
           </div>
         </div>

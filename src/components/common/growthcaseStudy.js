@@ -108,6 +108,8 @@ const GrowthCasestudy = () => {
                           <Link to="">read more</Link>
                       </div>
                   </div>
+                  <div className='casestudy__wrapper'>
+                  </div>
               </Slider>
           </div>
         </div>

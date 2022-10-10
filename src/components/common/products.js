@@ -23,6 +23,7 @@ const Products = () => {
     function refresh() {
       pinWrapWidth = pinWrap.scrollWidth;
       horizontalScrollLength = pinWrapWidth - window.innerWidth;
+      console.log('pinWrapWidth', pinWrapWidth, horizontalScrollLength);
     }
 
     console.log("window load listener");
@@ -45,7 +46,7 @@ const Products = () => {
         invalidateOnRefresh: true,
       },
       duration: 1,
-      x: () => -horizontalScrollLength - 100,
+      x: () => -horizontalScrollLength - 180,
       ease: "none",
     });
 
