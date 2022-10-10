@@ -1,0 +1,33 @@
+
+
+[{
+  "id":  "inline-radio-1",
+  "title":"VOIPElements",
+  "src":"growthpecypc",
+  "description":"Join the digital revolution with a 3CX Cloud PBX securely hosted with VoipElements."
+},
+{
+    "id":  "inline-radio-2",
+    "title":"ITElements",
+    "src":"itpecypc",
+    "description":"Don't wait before it's too late. IT Elements have you covered."
+  },
+  {
+    "id":  "inline-radio-3",
+    "title":"CloudElements",
+    "src":"cloudpecypc",
+    "description":"It's never enough to be just one. Redundancy never fails."
+  },
+  {
+    "id":  "inline-radio-4",
+    "title":"GrowthElements",
+    "src":"growthpecypc",
+    "description":"Automate your SAP Business One processes with GrowthElements."
+  },
+  {
+    "id":  "inline-radio-5",
+    "title":"IoTElements",
+    "src":"iotpecypc",
+    "description":"IoTElements delivers hardware and software solutions for new age technology integration with industrial hardware and software."
+  }
+]

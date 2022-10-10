@@ -17,9 +17,9 @@ import IOTSVG from "../../assets/header/iotsvg.svg";
 const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
-  // if (!isBrowser) {
-  //    return;
-  // }
+  if (!isBrowser) {
+     return;
+  }
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -31,7 +31,7 @@ export default function MainNav() {
   const urlValue = window.location.pathname
 
   window.onscroll = function () {
-    if(window.innerWidth > 767)
+    // if(window.innerWidth > 767)
     scrollFunction();
   };
 
