@@ -108,6 +108,8 @@ const ItCasestudy = () => {
                           <Link to="" className='text-pink'>read more</Link>
                       </div>
                   </div>
+                  <div className='casestudy__wrapper'>
+                  </div>
               </Slider>
           </div>
         </div>
