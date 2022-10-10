@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -7,6 +7,11 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import LogoSVG from "../../assets/logo.svg";
 import { navbar, menu__item } from "../../styles/home.module.css";
 import { Button } from "react-bootstrap";
+import VOIPSVG from "../../assets/header/voipsvg.svg";
+import CLOUDSVG from "../../assets/header/cloudsvg.svg";
+import GROWTHSVG from "../../assets/header/growthsvg.svg";
+import ITSVG from "../../assets/header/itsvg.svg";
+import IOTSVG from "../../assets/header/iotsvg.svg";
 
 // Check if window is defined (so if in the browser or in node.js).
 const isBrowser = typeof window !== "undefined"
@@ -15,6 +20,9 @@ export default function MainNav() {
   if (!isBrowser) {
      return;
   }
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   
   var prevScrollpos = window.pageYOffset;
   const navRef = React.useRef(null);
@@ -55,7 +63,7 @@ export default function MainNav() {
 
   return (
     <>
-      {["md"].map((expand) => (
+      {["lg"].map((expand) => (
         <Navbar
           key={expand}
           expand={expand}
@@ -64,6 +72,7 @@ export default function MainNav() {
           id="HeaderNavbar"
           style={{ transition: "all 0.5s ease" }}
           ref={navRef}
+          collapseOnSelect="true"
         >
           <Container fluid>
             <Navbar.Brand id="mainNav">
@@ -78,7 +87,7 @@ export default function MainNav() {
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
+              placement="start"
               className="mobile-menu"
               // responsive="sm"
             >
@@ -103,28 +112,24 @@ export default function MainNav() {
                     <Link className={menu__item} to="/contact-us">
                       Contact Us
                     </Link>
-                    <Link className={menu__item} to="/our-business-units">
-                      Our Business Units
-                    </Link>
                     <Link className={menu__item} to="/updates">
                       News Updates
                     </Link>
                   </Nav>
                   :null
-                }
-                  
-                {urlValue && urlValue.includes("/contact-us")?
+                }               
+                {urlValue && urlValue === "/contact-us"?
                   <Nav
                     className="header__menu justify-content-center flex-grow-1 pe-3"
                     id="navbar"
                   >
                     <Link className={menu__item} to="/">
-                      home
+                      About Us
                     </Link>
                     <Link className={menu__item} to="/">
-                      pika@be
+                      New Updates
                     </Link>
-                    <Link className={menu__item} to="/">
+                    {/* <Link className={menu__item} to="/">
                       voice 3cx
                     </Link>
                     <Link className={menu__item} to="/">
@@ -135,110 +140,119 @@ export default function MainNav() {
                     </Link>
                     <Link className={menu__item} to="/contact-us">
                       contact
-                    </Link>
+                    </Link> */}
                   </Nav>
                   :null
                   }
-
-                {urlValue && urlValue.includes("/business-units/voip-elements")?
+                {urlValue && urlValue === "/business-units/voip-elements/"?
                   <Nav
-                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    className="header__menu justify-content-center align-items-center flex-grow-1 pe-3 voipelements"
                     id="navbar"
                   >
-                    <Link className={menu__item} to="/">
-                      3CX Cloud PBK
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      VOIP unlimited
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Special numbers
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Case Studies
-                    </Link>
+                    <div className="navbar-nav b__units">
+                      <Link className={menu__item} to="/">
+                        3CX Cloud PBK
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        VOIP unlimited
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Special numbers
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Case Studies
+                      </Link>
+                    </div>
+                    <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>
                   </Nav>
                   :null
                   }
-
-                {urlValue && urlValue.includes("/business-units/it-elements")?
+                {urlValue && urlValue === "/business-units/it-elements/"?
                   <Nav
-                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    className="header__menu justify-content-center align-items-center flex-grow-1 pe-3 itelements"
                     id="navbar"
                   >
-                    <Link className={menu__item} to="/">
-                      Case Studies
-                    </Link>
+                    <div className="navbar-nav b__units">
+                      <Link className={menu__item} to="/">
+                        Case Studies
+                      </Link>
+                    </div>
+                    <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>
                   </Nav>
                   :null
                   }
-
-                {urlValue && urlValue.includes("/business-units/cloud-elements")?
+                {urlValue && urlValue === "/business-units/cloud-elements/"?
                   <Nav
-                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    className="header__menu justify-content-center align-items-center flex-grow-1 pe-3 cloudelements"
                     id="navbar"
                   >
-                    <Link className={menu__item} to="/">
-                      Case Studies
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Data Redundancy
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Business Continuity
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Case Studies
-                    </Link>
+                    <div className="navbar-nav b__units">
+                      <Link className={menu__item} to="/">
+                        Case Studies
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Data Redundancy
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Business Continuity
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Case Studies
+                      </Link>
+                    </div>
+                    <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>
                   </Nav>
                   :null
                   }
-
-                {urlValue && urlValue.includes("/business-units/growth-elements")?
+                {urlValue && urlValue === "/business-units/growth-elements/"?
                   <Nav
-                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    className="header__menu justify-content-center align-items-center flex-grow-1 pe-3 growthelements"
                     id="navbar"
                   >
-                    <Link className={menu__item} to="/">
-                      E-commerce
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Intercompany
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Sales Automation
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Vendor Automation
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Driver Delivery
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Custom Business App
-                    </Link>
+                    <div className="navbar-nav b__units">
+                      <Link className={menu__item} to="/">
+                        E-commerce
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Intercompany
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Sales Automation
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Vendor Automation
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Driver Delivery
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Custom Business App
+                      </Link>
+                    </div>
+                    <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>
                   </Nav>
                   :null
                 }
-
-                {urlValue && urlValue.includes("/business-units/iot-elements")?
+                {urlValue && urlValue === "/business-units/iot-elements/"?
                   <Nav
-                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    className="header__menu justify-content-center align-items-center flex-grow-1 pe-3 iotelements"
                     id="navbar"
                   >
-                    <Link className={menu__item} to="/">
-                      Water Pressure
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Electical Charging
-                    </Link>
-                    <Link className={menu__item} to="/">
-                      Custom Design
-                    </Link>
+                    <div className="navbar-nav b__units">
+                      <Link className={menu__item} to="/">
+                        Water Pressure
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Electical Charging
+                      </Link>
+                      <Link className={menu__item} to="/">
+                        Custom Design
+                      </Link>
+                    </div>
+                    <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>
                   </Nav>
                   :null
                   }
-
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
@@ -258,6 +272,35 @@ export default function MainNav() {
           </a>
         </div>
       </Button>
+        <Offcanvas className="businessunit__drawer" show={show} onHide={handleClose} placement="end">
+          <Offcanvas.Header className="p-4 justify-content-between align-items-center justify-content-md-end" closeButton>
+            <Offcanvas.Title className="d-block d-md-none order-2">Our Business Units</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <section className="businessUnits_list d-flex flex-column">
+                <Link to="" className="mb-5">
+                  <div className="business__logo mb-3"><img src={VOIPSVG} alt="VOIP elements"/></div>
+                  <h3 className="title">Join the digital revolution with a 3CX Cloud PBX securely hosted with <span>VoipElements.</span></h3>
+                </Link>
+                <Link to="" className="mb-5">
+                  <div className="business__logo mb-3"><img src={CLOUDSVG} alt="CLOUD elements"/></div>
+                  <h3 className="title">It's never enough to be just one. Redundancy never fails.</h3>
+                </Link>
+                <Link to="" className="mb-5">
+                  <div className="business__logo mb-3"><img src={GROWTHSVG} alt="GROWTH elements"/></div>
+                  <h3 className="title">Automate your SAP Business One processes with <span>GrowthElements.</span></h3>
+                </Link>
+                <Link to="" className="mb-5">
+                  <div className="business__logo mb-3"><img src={ITSVG} alt="IT elements"/></div>
+                  <h3 className="title">Don't wait before it's too late. <span>IT Elements</span> have you covered.</h3>
+                </Link>
+                <Link to="" className="mb-5">
+                  <div className="business__logo mb-3"><img src={IOTSVG} alt="IOT elements"/></div>
+                  <h3 className="title"><span>IoTElements</span> delivers hardware and software solutions for new age technology integration with industrial hardware and software.</h3>
+                </Link>
+            </section>
+          </Offcanvas.Body>
+        </Offcanvas>
     </>
   );
 }

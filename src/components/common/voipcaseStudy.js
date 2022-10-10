@@ -14,11 +14,9 @@ const VoipCasestudy = () => {
         cssEase: 'linear',
         arrows: true,
         speed: 1500,
+        infinite: false,
         centerMode: true,
         centerPadding: "60px",
-        vertical: false,
-        infinite: false,
-        initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1200,
