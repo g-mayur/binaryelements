@@ -13,6 +13,7 @@ import growthpecypcSVG from "../assets/heroslider/growthpecypc.svg";
 import iotpecypcSVG from "../assets/heroslider/iotpecypc.svg";
 import data from "../jsonData/contact-us.json"
 import {VOIPElements,ITElements,CloudElements,GrowthElements,IoTElements} from "../jsonData/contact-us.js";
+import ShowImage from "../components/common/showImage"
 
 export default function ContactUs() {
   console.log("ContactUs data==>",data.map((i,k)=>i.title))
@@ -60,6 +61,15 @@ export default function ContactUs() {
                   which business units are you interested in?
                 </h3>
               </Col>
+
+              <>
+                  {data.map((item, key ) => (
+                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+                   {/* ==> <img src={item.src} alt="VOIP Elements" /> */}
+                   <ShowImage key={key} image='growthpecypc' alt="VOIP Elements"/>
+                  </Col>
+                ))}
+              </>
               
                 {['radio'].map((type) => (
                   <>
