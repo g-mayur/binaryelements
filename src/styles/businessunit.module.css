@@ -6,7 +6,6 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
-  height: 100vh;
 }
 
 .itElementsbg {
@@ -16,7 +15,6 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
-  height: 100vh;
 }
 
 .cloudElementsbg {
@@ -26,7 +24,6 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
-  height: 100vh;
 }
 
 .growthElementsbg {
@@ -36,7 +33,6 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
-  height: 100vh;
 }
 
 .iotElementsbg {
@@ -46,7 +42,6 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
-  height: 100vh;
 }
 
 .logotext {
@@ -312,6 +307,16 @@
 
 .iotelements .venture_holder {
   background-image: url('../assets/voipelements/iotventure.png');
+}
+
+@media only screen and (min-width: 1799.98px) {
+  .voipElementsbg,
+  .itElementsbg,
+  .cloudElementsbg,
+  .growthElementsbg,
+  .iotElementsbg {
+      height: 100vh;
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
