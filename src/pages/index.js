@@ -354,7 +354,7 @@ const AsNavFor = () => {
                 and services built on the following initiatives.
               </h2>
             </Col>
-            <Col className="d-flex flex-row-reverse">
+            {/* <Col className="d-flex flex-row-reverse">
               <ScrollBtn
                 text="scroll to next"
                 target="#section-1"
@@ -362,7 +362,7 @@ const AsNavFor = () => {
                 showBtn={"right"}
                 offset={-2000}
               />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
         <Products />
