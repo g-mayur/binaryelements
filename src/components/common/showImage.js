@@ -1,32 +1,13 @@
 import React from "react";
-import { StaticImage, getImage, GatsbyImage } from "gatsby-plugin-image";
+let images = require.context('../../assets/heroslider', true);
+
 
 function ShowImage(props) {
-  // const image = getImage("../../assets/heroslider/growthpecypc.svg")
   const aa = props.image.toString();
-//   const aa = ('growthpecypc').toString();
-  console.log("image===>", `../../assets/heroslider/${aa}.svg`);
-  const image= getImage(`../../assets/heroslider/${aa}.svg`)
+  console.log("image===>", images(`./${aa}.svg`).default);
   return (
     <div>
-        {/* <img src={`../../assets/heroslider/${aa}.svg`}/> */}
-      {/* == {props.image} == <GatsbyImage image ={props.image} alt={props.alt} /> */}
-      {/* == {props.image} == <StaticImage src ={ "../assets/heroslider/growthpecypc.svg"} alt={props.alt} /> */}
-      {aa ? (
-        <>
-          {props.image}
-          <StaticImage
-            placeholder="blurred"
-            // layout="fixed"
-            // width={200}
-            // height={200}
-            src={`../../assets/heroslider/${aa}.svg`}
-            alt="asasas"
-          />
-        </>
-      ) : null}
-
-      {/* <StaticImage src ={"../../assets/heroslider/growthpecypc.svg"} alt={props.alt} /> */}
+        <img src={ images(`./${aa}.svg`).default}/>
     </div>
   );
 }

@@ -5,18 +5,10 @@ import {contactpage_holder, description__text, contact_details, label, businessu
 import SMSTrack from "../assets/contact/sms-tracking.svg"
 import PhoneCall from "../assets/contact/phone-call.svg"
 import LocationPin from "../assets/contact/location-pin.svg"
-// import { Link } from "gatsby"
-import voippecypcSVG from "../assets/heroslider/voippecypc.svg";
-import itpecypcSVG from "../assets/heroslider/itpecypc.svg";
-import cloudpecypcSVG from "../assets/heroslider/cloudpecypc.svg";
-import growthpecypcSVG from "../assets/heroslider/growthpecypc.svg";
-import iotpecypcSVG from "../assets/heroslider/iotpecypc.svg";
-import data from "../jsonData/contact-us.json"
-import {VOIPElements,ITElements,CloudElements,GrowthElements,IoTElements} from "../jsonData/contact-us.js";
+import dynamicdata from "../jsonData/contact-us.json"
 import ShowImage from "../components/common/showImage"
 
 export default function ContactUs() {
-  console.log("ContactUs data==>",data.map((i,k)=>i.title))
   return (
     <Layout>
       <section className={`overlay position-relative ${contactpage_holder}`}>
@@ -62,104 +54,28 @@ export default function ContactUs() {
                 </h3>
               </Col>
 
-              <>
-                  {data.map((item, key ) => (
-                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                   {/* ==> <img src={item.src} alt="VOIP Elements" /> */}
-                   <ShowImage key={key} image='growthpecypc' alt="VOIP Elements"/>
-                  </Col>
-                ))}
-              </>
-              
                 {['radio'].map((type) => (
                   <>
-                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
-                      <Form.Check type={type} id="inline-radio-1" className={`${units}`}>
-                        <Form.Check.Input type="radio" name="group1"/>
-                        <Form.Check.Label className={`${units_logo}`}>
-                          <img src={voippecypcSVG} alt="VOIP Elements" />
-                        </Form.Check.Label>
-                        <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">{VOIPElements.title}</h4>
-                          <p>{VOIPElements.description}</p>
-                        </Form.Check.Label>
-                      </Form.Check>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
-                      <Form.Check type={type} id="inline-radio-2" className={`${units}`}>
-                        <Form.Check.Input type="radio" name="group1"/>
-                        <Form.Check.Label className={`${units_logo}`}>
-                          <img src={itpecypcSVG} alt="VOIP Elements" />
-                        </Form.Check.Label>
-                        <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">{ITElements.title}</h4>
-                          <p>{ITElements.description}</p>
-                        </Form.Check.Label>
-                      </Form.Check>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
-                      <Form.Check type={type} id="inline-radio-3" className={`${units}`}>
-                        <Form.Check.Input type="radio" name="group1"/>
-                        <Form.Check.Label className={`${units_logo}`}>
-                          <img src={cloudpecypcSVG} alt="VOIP Elements" />
-                        </Form.Check.Label>
-                        <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">{CloudElements.title}</h4>
-                          <p>{CloudElements.description}</p>
-                        </Form.Check.Label>
-                      </Form.Check>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
-                      <Form.Check type={type} id="inline-radio-4" className={`${units}`}>
-                        <Form.Check.Input type="radio" name="group1"/>
-                        <Form.Check.Label className={`${units_logo}`}>
-                          <img src={growthpecypcSVG} alt="VOIP Elements" />
-                        </Form.Check.Label>
-                        <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">{GrowthElements.title}</h4>
-                          <p>{GrowthElements.description}</p>
-                        </Form.Check.Label>
-                      </Form.Check>
-                    </div>
-                  </Col>
-                  <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                    <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
-                      <Form.Check type={type} id="inline-radio-5" className={`${units}`}>
-                        <Form.Check.Input type="radio" name="group1"/>
-                        <Form.Check.Label className={`${units_logo}`}>
-                          <img src={iotpecypcSVG} alt="VOIP Elements" />
-                        </Form.Check.Label>
-                        <Form.Check.Label className={`${units_desc}`}>
-                          <h4 className="business_unit_name">{IoTElements.title}</h4>
-                          <p>{IoTElements.description}</p>
-                        </Form.Check.Label>
-                      </Form.Check>
-                    </div>
-                  </Col>
+                  {dynamicdata.map((item, key ) => (
+                    <Col xs={12} sm={6} md={4} lg={3} xl={3}>
+                      <div key={type} className={`mb-5 ${b_unit_wrapper}`}>
+                        <Form.Check type={type} id={item.id} className={`${units}`}>
+                          <Form.Check.Input type="radio" name="group1"/>
+                          <Form.Check.Label className={`${units_logo}`}>
+                            {/* <img src={voippecypcSVG} alt="VOIP Elements" /> */}
+                            <ShowImage key={key} image={item.src} alt={item.title}/>
+                          </Form.Check.Label>
+                          <Form.Check.Label className={`${units_desc}`}>
+                            <h4 className="business_unit_name">{item.title}</h4>
+                            <p>{item.description}</p>
+                          </Form.Check.Label>
+                        </Form.Check>
+                      </div>
+                    </Col>
+                  ))}
                   </>
                 ))}
-              {/* <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                <Form.Check.Input type="radio" id="inline-radio-1" name="group1"/>
-              </Col>
-              <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                <Form.Check.Input type="radio" id="inline-radio-2" name="group1" />
-              </Col>
-              <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                <Form.Check.Input type="radio" id="inline-radio-3" name="group1" />
-              </Col>
-              <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                <Form.Check.Input type="radio" id="inline-radio-4" name="group1" />
-              </Col>
-              <Col xs={12} sm={6} md={4} lg={3} xl={3}>
-                <Form.Check.Input type="radio" id="inline-radio-5" name="group1" />
-              </Col> */}
+            
             </Row>
           </Container>
         </div>
