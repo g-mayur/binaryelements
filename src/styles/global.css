@@ -484,6 +484,8 @@ svg {
   line-height: 24px;
   color: #ef791e;
   text-decoration: none;
+  /* pointer-events: none; */
+  cursor: pointer;
 }
 
 .caseStudy_holder .casestudy__slider_wrapper .casestudy__wrapper .casestudy_content h4 {

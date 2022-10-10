@@ -41,7 +41,7 @@ const AsNavFor = () => {
 
   const Mainslider = {
     cssEase: "linear",
-    autoplay: true,
+    // autoplay: true,
     speed: 1000,
     autoplaySpeed: 2500,
     infinite: true,
@@ -303,7 +303,7 @@ const AsNavFor = () => {
                   xl={{ span: 3, offset: 9 }}
                 >
                   <p className={`${joinText}`}>
-                    Your water pressure regulaator and automation. Keep a
+                    Your water pressure regulator and automation. Keep a
                     healthy flow of water.
                   </p>
                   <Button
