@@ -8,7 +8,13 @@ import CSImage4 from "../../assets/voipelements/casestudy-img4.png";
 import { Link } from "gatsby";
 import useWindowResize from "../common/windowResize";
 
+const isBrowser = typeof window !== "undefined";
+
 const VoipCasestudy = () => {
+
+  if (!isBrowser) {
+    return;
+ }
 
   const [mobileView] = useWindowResize();
 
@@ -110,9 +116,9 @@ const VoipCasestudy = () => {
                           <Link to="">read more</Link>
                       </div>
                   </div>
-                  {!mobileView ?
+                  {/* {!mobileView ? */}
                     <div className='casestudy_content mobileView'></div>
-                  :null} 
+                   {/* :null}   */}
               </Slider>
           </div>
         </div>
