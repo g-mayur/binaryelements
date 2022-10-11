@@ -6,8 +6,13 @@ import updateImage1 from "../../assets/updates/updateImg-1.png";
 import updateImage2 from "../../assets/updates/updateImg-2.png";
 import updateImage3 from "../../assets/updates/updateImg-3.png";
 
+const isBrowser = typeof window !== "undefined"
+
 const Updates = () => {
-    const [mobileView, setMobileView] = useState(false)
+    if (!isBrowser) {
+        return;
+    }
+    const [mobileView, setMobileView] = useState(false);
     window.onscroll = function () {
         if(window.innerWidth <= 600){
             setMobileView(true);
@@ -15,7 +20,7 @@ const Updates = () => {
         }else{
             setMobileView(false);
         }
-      }
+    }
 
     const updateSlider = {
         slidesToShow: 3,
