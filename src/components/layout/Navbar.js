@@ -240,7 +240,7 @@ export default function MainNav() {
                         Water Pressure
                       </Link>
                       <Link className={menu__item} to="/">
-                        Electical Charging
+                        Electrical Charging
                       </Link>
                       <Link className={menu__item} to="/">
                         Custom Design
