@@ -16,7 +16,7 @@ import VerifySVG from "../../assets/svg/verify.svg";
 import SupportSVG from "../../assets/svg/full-support.svg";
 import UserprofileSVG from "../../assets/svg/profile-2user.svg";
 import DrivernSVG from "../../assets/svg/driver.svg";
-
+import { Link } from "gatsby";
 
 const ITElements = () => {
   return (
@@ -124,8 +124,9 @@ const ITElements = () => {
                     <h2 className="text-center mb-4">Spend more time running your business</h2>
                 </Col>
                 <Col xs={12} sm={12} md={8} lg={6} xl={5} className="text-center">
-                    <p className="text-center mb-5"> Leave IT in good hands. Call us at 1300 xxxxxx or Contact Us.</p>
-                    <Button className="start__btn text-gray-dark mt-3 mt-md-4 mt-lg-5 bg-pink" size="lg">call now</Button>
+                    <p className="text-center mb-5"> Leave IT in good hands. Call us at 1300 834 077 or 
+                    <Link to="/contact-us" className="text-white text-decoration-none"> Contact Us.</Link></p>
+                    <Button className="start__btn text-gray-dark mt-3 mt-md-4 mt-lg-5 bg-pink" size="lg">call number</Button>
                 </Col>
               </Row>
             </Container>

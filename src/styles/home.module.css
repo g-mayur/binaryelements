@@ -257,6 +257,7 @@
     .growthElementsbg,
     .iotElementsbg {
         padding: 10% 0 15%;
+        height: 780px;
     }
 
     .thumbSlider {
@@ -272,6 +273,7 @@
     .growthElementsbg,
     .iotElementsbg {
         padding: 10% 0 25%;
+        height: 720px;
     }
 
     .joinText {
