@@ -6,11 +6,17 @@ import CSImage2 from "../../assets/voipelements/casestudy-img2.png";
 import CSImage3 from "../../assets/voipelements/casestudy-img3.png";
 import CSImage4 from "../../assets/voipelements/casestudy-img4.png";
 import { Link } from "gatsby";
-// import useWindowResize from "../common/windowResize";
+import useWindowResize from "../common/windowResize";
+
+const isBrowser = typeof window !== "undefined";
 
 const VoipCasestudy = () => {
 
-  // const [mobileView,setMobileView] = useWindowResize();
+  if (!isBrowser) {
+    return;
+ }
+
+  const [mobileView] = useWindowResize();
 
     const voipcasestudySlider = {
         slidesToShow: 3,
