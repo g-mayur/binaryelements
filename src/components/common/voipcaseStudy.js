@@ -6,8 +6,12 @@ import CSImage2 from "../../assets/voipelements/casestudy-img2.png";
 import CSImage3 from "../../assets/voipelements/casestudy-img3.png";
 import CSImage4 from "../../assets/voipelements/casestudy-img4.png";
 import { Link } from "gatsby";
+import useWindowResize from "../common/windowResize";
 
 const VoipCasestudy = () => {
+
+  const [mobileView] = useWindowResize();
+
     const voipcasestudySlider = {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -106,8 +110,9 @@ const VoipCasestudy = () => {
                           <Link to="">read more</Link>
                       </div>
                   </div>
-                  <div className='casestudy__wrapper'>
-                  </div>
+                  {!mobileView ?
+                    <div className='casestudy_content mobileView'></div>
+                  :null} 
               </Slider>
           </div>
         </div>
