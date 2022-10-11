@@ -6,8 +6,12 @@ import CSImage2 from "../../assets/voipelements/iotcasestudy-img2.png";
 import CSImage3 from "../../assets/voipelements/iotcasestudy-img3.png";
 import CSImage4 from "../../assets/voipelements/iotcasestudy-img4.png";
 import { Link } from "gatsby";
+import useWindowResize from "../common/windowResize";
 
 const IotCasestudy = () => {
+
+  const [mobileView] = useWindowResize();
+
     const voipcasestudySlider = {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -108,8 +112,9 @@ const IotCasestudy = () => {
                           <Link to="" className='text-yellow'>read more</Link>
                       </div>
                   </div>
-                  <div className='casestudy__wrapper'>
-                  </div>
+                  {!mobileView ?
+                    <div className='casestudy__wrapper mobileView'></div>
+                  :null} 
               </Slider>
           </div>
         </div>

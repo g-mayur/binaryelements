@@ -5,22 +5,13 @@ import Slider from "react-slick";
 import updateImage1 from "../../assets/updates/updateImg-1.png";
 import updateImage2 from "../../assets/updates/updateImg-2.png";
 import updateImage3 from "../../assets/updates/updateImg-3.png";
-
-const isBrowser = typeof window !== "undefined"
+import useWindowResize from "../common/windowResize";
 
 const Updates = () => {
-    if (!isBrowser) {
-        return;
-    }
-    const [mobileView, setMobileView] = useState(false);
-    window.onscroll = function () {
-        if(window.innerWidth <= 600){
-            setMobileView(true);
-            console.log("scrollTrigger in..");        
-        }else{
-            setMobileView(false);
-        }
-    }
+
+    const [mobileView] = useWindowResize();
+
+    console.log("windo resize==>.final",mobileView);
 
     const updateSlider = {
         slidesToShow: 3,
