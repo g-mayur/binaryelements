@@ -196,9 +196,6 @@ export default function MainNav() {
                       <Link className={menu__item} to="/">
                         Business Continuity
                       </Link>
-                      <Link className={menu__item} to="/">
-                        Case Studies
-                      </Link>
                     </div>
                     <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>
                   </Nav>
@@ -226,7 +223,7 @@ export default function MainNav() {
                         Driver Delivery
                       </Link>
                       <Link className={menu__item} to="/">
-                        Custom Business App
+                        Custom Business Apps
                       </Link>
                     </div>
                     <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>

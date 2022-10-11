@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Slider from "react-slick";
 import updateImage1 from "../../assets/updates/updateImg-1.png";
@@ -7,6 +7,16 @@ import updateImage2 from "../../assets/updates/updateImg-2.png";
 import updateImage3 from "../../assets/updates/updateImg-3.png";
 
 const Updates = () => {
+    const [mobileView, setMobileView] = useState(false)
+    window.onscroll = function () {
+        if(window.innerWidth <= 600){
+            setMobileView(true);
+            console.log("scrollTrigger in..");        
+        }else{
+            setMobileView(false);
+        }
+      }
+
     const updateSlider = {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -132,8 +142,9 @@ const Updates = () => {
                         <Link>read more</Link>
                     </div>
                 </div>
-                <div className='updates__wrapper'>
-                </div>
+                {!mobileView ?
+                    <div className='updates__wrapper'></div>
+                :null}
             </Slider>
         </div>
     </div>
