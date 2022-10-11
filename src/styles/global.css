@@ -876,8 +876,8 @@ svg {
   color: #f2f2f2 !important;
   text-decoration: none;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
 }
 
 .footer .call a:last-of-type,
@@ -911,6 +911,62 @@ svg {
   .container-fluid {
     width: calc(100% - 48px) !important;
   }
+
+  .mobile-menu {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    border: none !important;
+    background: #333333 !important;
+    display: flex;
+  }
+
+  .mobile-menu .offcanvas-header {
+    padding: 24px;
+  }
+
+  .mobile-menu .offcanvas-header .btn-close {
+    background-color: #ffffff;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 16px;
+  }
+
+  .mobile-menu .offcanvas-body {
+    padding: 24px;
+    /* padding-top: 150px; */
+  }
+
+  .mobile-menu .offcanvas-body .header__menu {
+    height: 100%;
+  }
+
+  .mobile-menu .offcanvas-body .header__menu .action__btn {
+    margin-top: auto;
+  }
+
+  .mobile-menu .offcanvas-body .header__menu a {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Figtree";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    color: #f2f2f2;
+    padding: 29px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu .offcanvas-body .header__menu a[aria-current="page"],
+  .mobile-menu .offcanvas-body .header__menu a:hover,
+  .mobile-menu .offcanvas-body .header__menu a:focus {
+    color: #333333 !important;
+    background: #ffdd71;
+    border-radius: 50px;
+  }
+
 
   .navbar-brand img {
     max-width: 200px;
@@ -1180,6 +1236,9 @@ svg {
 @media only screen and (max-width: 600.98px) {
   .container-fluid {
     width: calc(100% - 24px) !important;
+  }
+  .trustedcomapnies_holder .slick-slider {
+    margin-left: -24px;
   }
 
   .trustedcomapnies_holder {
