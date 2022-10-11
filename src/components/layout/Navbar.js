@@ -275,23 +275,23 @@ export default function MainNav() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <section className="businessUnits_list d-flex flex-column">
-                <Link to="" className="mb-5">
+                <Link to="/business-units/voip-elements" className="mb-5">
                   <div className="business__logo mb-3"><img src={VOIPSVG} alt="VOIP elements"/></div>
                   <h3 className="title">Join the digital revolution with a 3CX Cloud PBX securely hosted with <span>VoipElements.</span></h3>
                 </Link>
-                <Link to="" className="mb-5">
+                <Link to="/business-units/cloud-elements" className="mb-5">
                   <div className="business__logo mb-3"><img src={CLOUDSVG} alt="CLOUD elements"/></div>
                   <h3 className="title">It's never enough to be just one. Redundancy never fails.</h3>
                 </Link>
-                <Link to="" className="mb-5">
+                <Link to="/business-units/growth-elements" className="mb-5">
                   <div className="business__logo mb-3"><img src={GROWTHSVG} alt="GROWTH elements"/></div>
                   <h3 className="title">Automate your SAP Business One processes with <span>GrowthElements.</span></h3>
                 </Link>
-                <Link to="" className="mb-5">
+                <Link to="/business-units/it-elements" className="mb-5">
                   <div className="business__logo mb-3"><img src={ITSVG} alt="IT elements"/></div>
                   <h3 className="title">Don't wait before it's too late. <span>IT Elements</span> have you covered.</h3>
                 </Link>
-                <Link to="" className="mb-5">
+                <Link to="/business-units/iot-elements" className="mb-5">
                   <div className="business__logo mb-3"><img src={IOTSVG} alt="IOT elements"/></div>
                   <h3 className="title"><span>IoTElements</span> delivers hardware and software solutions for new age technology integration with industrial hardware and software.</h3>
                 </Link>

@@ -17,7 +17,7 @@ import Statusup from "../../assets/svg/green-status-up.svg";
 import Folderconnection from "../../assets/svg/green-folder-connection.svg";
 import Monitormobile from "../../assets/svg/green-monitor-mobbile.svg";
 import Greendriver from "../../assets/svg/green-driver.svg";
-
+import { Link } from "gatsby";
 
 const GrowthElements = () => {
   return (
@@ -131,8 +131,9 @@ const GrowthElements = () => {
                     <h2 className="text-center mb-4">Ready to venture?</h2>
                 </Col>
                 <Col xs={12} sm={12} md={8} lg={6} xl={5} className="text-center">
-                    <p className="text-center mb-5">Call us at 1300 xxxxxx or Contact Us.</p>
-                    <Button className="start__btn text-white mt-3 mt-md-4 mt-lg-5 bg-green" size="lg">call now</Button>
+                    <p className="text-center mb-5">Call us at 1300 834 077 or 
+                    <Link to="/contact-us" className="text-white text-decoration-none"> Contact Us.</Link></p>
+                    <Button className="start__btn text-white mt-3 mt-md-4 mt-lg-5 bg-green" size="lg">call number</Button>
                 </Col>
               </Row>
             </Container>

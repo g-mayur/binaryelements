@@ -13,7 +13,7 @@ const GrowthServices = () => {
         slidesToScroll: 1,
         cssEase: 'linear',
         arrows: true,
-        speed: 1500,
+        speed: 1000,
         infinite: false,
         initialSlide: 0,
         responsive: [

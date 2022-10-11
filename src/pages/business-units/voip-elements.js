@@ -17,7 +17,7 @@ import CloudConnectionSVG from "../../assets/svg/cloud-connection.svg";
 import CallingSVG from "../../assets/svg/call-calling.svg";
 import UserprofileSVG from "../../assets/svg/profile-2user.svg";
 import DrivernSVG from "../../assets/svg/driver.svg";
-
+import { Link } from "gatsby";
 
 const VoipElements = () => {
   return (
@@ -132,8 +132,9 @@ const VoipElements = () => {
                     <h2 className="text-center mb-4">Ready to venture?</h2>
                 </Col>
                 <Col xs={12} sm={12} md={8} lg={6} xl={5} className="text-center">
-                    <p className="text-center mb-5"> Call us at 1300 xxxxxx or Contact Us</p>
-                    <Button className="start__btn mt-3 mt-md-4 mt-lg-5 bg-red" size="lg">call now</Button>
+                    <p className="text-center mb-5"> Call us at 1300 834 077 or 
+                    <Link to="/contact-us" className="text-white text-decoration-none"> Contact Us.</Link></p>
+                    <Button className="start__btn mt-3 mt-md-4 mt-lg-5 bg-red" size="lg">call number</Button>
                 </Col>
               </Row>
             </Container>

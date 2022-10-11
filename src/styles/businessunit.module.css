@@ -392,3 +392,13 @@
     padding: 30px !important;
   }
 }
+
+@media only screen and (max-width: 991.98px) {
+  .voipElementsbg,
+  .itElementsbg,
+  .cloudElementsbg,
+  .growthElementsbg,
+  .iotElementsbg {
+      height: 680px;
+  }
+}
