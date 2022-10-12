@@ -36,7 +36,7 @@ const IotElements = () => {
                     <Row>
                       <Col xs={12} sm={12} md={9} lg={{ span: 5, offset: 7 }} xl={{ span: 3, offset: 9 }}>
                         <p className={`${joinText}`}>
-                          Your water pressure regulaator and automation. Keep a healthy flow of water.
+                          Your water pressure regulator and automation. Keep a healthy flow of water.
                         </p>
                         <Button className={`p-0 d-flex align-items-center ${joinBtn}`}>
                           <img src={iotBtn} alt="CLOUD Btn" /> <span className="ms-3">Get Now!</span>
