@@ -103,18 +103,21 @@ export default function MainNav() {
               <Offcanvas.Body>
                 {urlValue && urlValue === "/"?
                   <Nav
-                    className="header__menu justify-content-center flex-grow-1 pe-3"
+                    className="header__menu justify-content-center align-items-center flex-grow-1 pe-3 voipelements"
                     id="navbar"
                   >
-                    <Link className={menu__item} to="/about-us">
-                      About Us
-                    </Link>
-                    <Link className={menu__item} to="/contact-us">
-                      Contact Us
-                    </Link>
-                    <Link className={menu__item} to="/updates">
-                      News Updates
-                    </Link>
+                    <div className="navbar-nav b__units">
+                      <Link className={menu__item} to="/about-us">
+                        About Us
+                      </Link>
+                      <Link className={menu__item} to="/contact-us">
+                        Contact Us
+                      </Link>
+                      <Link className={menu__item} to="/updates">
+                        News Updates
+                      </Link>
+                    </div>
+                    <Button className="action__btn" onClick={handleShow}>Our Business Units</Button>
                   </Nav>
                   :null
                 }               
