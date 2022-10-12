@@ -84,7 +84,7 @@ const IotCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3 text-gray-900'>IotElements</h4>
                           <p className="description mb-3 text-gray-900">Learn how IotElements helps with water flow</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -94,7 +94,7 @@ const IotCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3 text-gray-900'>IotElements</h4>
                           <p className="description mb-3 text-gray-900">Learn how IotElements helps with water flow</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -104,7 +104,7 @@ const IotCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3 text-gray-900'>IotElements</h4>
                           <p className="description mb-3 text-gray-900">Learn how IotElements helps with water flow</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -114,7 +114,7 @@ const IotCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3 text-gray-900'>13/1300 and 1800 Numbers</h4>
                           <p className="description mb-3 text-gray-900">Get vanity numbers such as 13 FINANCE or a 13/1300/1800 number for customers to easily remember and call.</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   {!mobileView ?

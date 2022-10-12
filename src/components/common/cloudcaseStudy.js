@@ -83,7 +83,7 @@ const CloudCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Clenergy</h4>
                           <p className="description mb-3">Learn more about how Clenergy reviewed their data requirements</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -93,7 +93,7 @@ const CloudCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>The Mint</h4>
                           <p className="description mb-3">Learn more about how The Mint reviewed their data requirements</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -103,7 +103,7 @@ const CloudCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Arbory</h4>
                           <p className="description mb-3">Learn more about how Arbory reviewed their data requirements</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -113,7 +113,7 @@ const CloudCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>13/1300 and 1800 Numbers</h4>
                           <p className="description mb-3">Get vanity numbers such as 13 FINANCE or a 13/1300/1800 number for customers to easily remember and call.</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   {!mobileView ?

@@ -68,7 +68,7 @@ const VoipServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>3CX Cloud PBX</h4>
                           <p className="description mb-3">Enterprise grade VOIP phone system with features such as Queues, Ring Groups, call routing as well as Messaging, Online meetings and video conferencing.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -78,7 +78,7 @@ const VoipServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Unlimited VOIP Trunks</h4>
                           <p className="description mb-3">Available for any SIP based VOIP phone system such as Asterisk, Freeswitch, CISCO, Avaya and others.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -88,7 +88,7 @@ const VoipServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Mobile Numbers</h4>
                           <p className="description mb-3">Call out and receive calls with Mobile numbers. Allowing for better connects and pick ups by customers.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -98,7 +98,7 @@ const VoipServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>13/1300 and 1800 Numbers</h4>
                           <p className="description mb-3">Get vanity numbers such as 13 FINANCE or a 13/1300/1800 number for customers to easily remember and call.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
               </Slider>
