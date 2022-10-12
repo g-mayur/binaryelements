@@ -68,7 +68,7 @@ const CloudServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Interconnectivity</h4>
                           <p className="description mb-3">Connect your offices and run hybrid server farms and infrastructure easily.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -78,7 +78,7 @@ const CloudServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Data redundancy</h4>
                           <p className="description mb-3">One way sync for security and ransomware protection. Always be safe with your data in the right hands.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -88,7 +88,7 @@ const CloudServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Data Centre</h4>
                           <p className="description mb-3">Virtualization and Hosting of your applications such as SAP Business One, E-commerce platforms and custom apps.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -98,7 +98,7 @@ const CloudServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Custom App Hosting</h4>
                           <p className="description mb-3">Turnkey solution for your app hosting, keeping scalability, security and redundancy in mind.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
               </Slider>

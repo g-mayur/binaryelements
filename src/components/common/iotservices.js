@@ -66,7 +66,7 @@ const IotServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3 text-gray-900'>Water Pressure Manager</h4>
                           <p className="description mb-3 text-gray-900">Regulate and control your water pressure in your building and home, controlled by our cloud app. Monitor readings and trigger alerts.</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -76,7 +76,7 @@ const IotServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3 text-gray-900'>Custom IoT Hardware and Apps</h4>
                           <p className="description mb-3 text-gray-900">From the hardware, circuitry and electrical components design as well as Cloud apps. Total process management from idea to implementation.</p>
-                          <Link to="" className='text-yellow'>read more</Link>
+                          <Link className='text-yellow cursor-pointer'>read more</Link>
                       </div>
                   </div>
               </Slider>

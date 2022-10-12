@@ -83,7 +83,7 @@ const VoipCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>SSS Auto</h4>
                           <p className="description mb-3">Read about how SSS Auto delivers great customer service with VOIP Elements</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -93,7 +93,7 @@ const VoipCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>DJI</h4>
                           <p className="description mb-3">Read about how DJI delivers great customer service with VOIP Elements</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -103,7 +103,7 @@ const VoipCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Mr. Burger</h4>
                           <p className="description mb-3">Read about how Mr. Burger delivers great customer service with VOIP Elements</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -113,7 +113,7 @@ const VoipCasestudy = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>13/1300 and 1800 Numbers</h4>
                           <p className="description mb-3">Get vanity numbers such as 13 FINANCE or a 13/1300/1800 number for customers to easily remember and call.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   {/* {!mobileView ? */}

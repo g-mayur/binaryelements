@@ -68,7 +68,7 @@ const ITServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Connectivity</h4>
                           <p className="description mb-3">Enterprise grade NBN, Fibre and 5G connections for your business. Designed to connect back to base and connect out to the internet.</p>
-                          <Link to="" className='text-pink'>read more</Link>
+                          <Link className='text-pink cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -78,7 +78,7 @@ const ITServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Networks</h4>
                           <p className="description mb-3">Ensuring coverage physically and virtual environment. Security conscious and deployment ready.</p>
-                          <Link to="" className='text-pink'>read more</Link>
+                          <Link className='text-pink cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -88,7 +88,7 @@ const ITServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Microsoft 365 Migration and Deployment</h4>
                           <p className="description mb-3">Let us handle migration and deployment of your MS 365 needs.</p>
-                          <Link to="" className='text-pink'>read more</Link>
+                          <Link className='text-pink cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -98,7 +98,7 @@ const ITServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Veeam and Microsoft SPLA partner</h4>
                           <p className="description mb-3">Pay by usage instead of purchasing entire license.  Always know your software licensing is compliant.</p>
-                          <Link to="" className='text-pink'>read more</Link>
+                          <Link className='text-pink cursor-pointer'>read more</Link>
                       </div>
                   </div>
               </Slider>

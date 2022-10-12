@@ -68,7 +68,7 @@ const GrowthServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>E-commerce</h4>
                           <p className="description mb-3">Connect your Mangento, Woocommerce, Ebay with your SAP B1.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -78,7 +78,7 @@ const GrowthServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Intercompany</h4>
                           <p className="description mb-3">Two way sync for your different SAP B1 with Item, Project, Sales Orders, Invoices, Purchase Orders sync.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -88,7 +88,7 @@ const GrowthServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Sales Automation</h4>
                           <p className="description mb-3">Effective and productivity with SAP Suite. Multiple sales staff running day to day quotes and sales orders without touching SAP B1.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
                   <div className="casestudy__wrapper">
@@ -98,7 +98,7 @@ const GrowthServices = () => {
                       <div className="casestudy_content">
                           <h4 className='title mb-3'>Vendor Automation</h4>
                           <p className="description mb-3">Receive Purchase Orders from your customer and automate Sales Order creation.</p>
-                          <Link to="">read more</Link>
+                          <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
               </Slider>
