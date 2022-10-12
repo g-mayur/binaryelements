@@ -31,7 +31,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .itElementsbg {
@@ -41,7 +41,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .cloudElementsbg {
@@ -51,7 +51,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .growthElementsbg {
@@ -61,7 +61,7 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .iotElementsbg {
@@ -71,11 +71,11 @@
     background-position: center;
     padding: 10% 0 5%;
     z-index: 0;
-    height: 1100px;
+    height: 100vh;
 }
 
 .logotext {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .logotext p {
@@ -121,6 +121,10 @@
 
 .thumbSlider>div {
     overflow: visible;
+}
+
+.thumbSliderRange {
+    cursor: pointer;
 }
 
 .thumbSliderRange h3 {
@@ -257,7 +261,7 @@
     .growthElementsbg,
     .iotElementsbg {
         padding: 10% 0 15%;
-        height: 780px;
+        /* height: 780px; */
     }
 
     .thumbSlider {
@@ -273,7 +277,6 @@
     .growthElementsbg,
     .iotElementsbg {
         padding: 10% 0 25%;
-        height: 720px;
     }
 
     .joinText {
@@ -293,6 +296,7 @@
     .growthElementsbg,
     .iotElementsbg {
         padding: 0 0 25%;
+        height: 100vh;
     }
 
     .logotext img {
@@ -301,5 +305,19 @@
 
     .thumbSlider {
         width: calc(100% - 24px);
+    }
+}
+
+@media only screen 
+and (min-device-width : 260px) 
+and (max-device-width : 768px) 
+and (orientation : landscape) { 
+    .voipElementsbg,
+    .itElementsbg,
+    .cloudElementsbg,
+    .growthElementsbg,
+    .iotElementsbg {
+        padding: 10% 0 5%;
+        height: 620px;
     }
 }

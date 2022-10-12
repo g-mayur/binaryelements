@@ -6,6 +6,7 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
+  height: 100vh;
 }
 
 .itElementsbg {
@@ -15,6 +16,7 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
+  height: 100vh;
 }
 
 .cloudElementsbg {
@@ -24,6 +26,7 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
+  height: 100vh;
 }
 
 .growthElementsbg {
@@ -33,6 +36,7 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
+  height: 100vh;
 }
 
 .iotElementsbg {
@@ -42,6 +46,7 @@
   background-position: center;
   padding: 10% 0 5%;
   z-index: 0;
+  height: 100vh;
 }
 
 .logotext {
