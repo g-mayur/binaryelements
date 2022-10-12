@@ -14,12 +14,12 @@ import ITSVG from "../../assets/header/itsvg.svg";
 import IOTSVG from "../../assets/header/iotsvg.svg";
 
 // Check if window is defined (so if in the browser or in node.js).
-const isBrowser = typeof window !== "undefined"
+// const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
-  if (!isBrowser) {
-     return;
-  }
+  // if (!isBrowser) {
+  //    return;
+  // }
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -52,6 +52,12 @@ export default function MainNav() {
       document.getElementById("shoWMenu").style.transform = "translateY(-200px)";
       MenuRef.current.classList.remove("active");
     }
+    else {
+      document.getElementById("HeaderNavbar").style.transform = "translateY(-200px)";
+      navRef.current.classList.remove("show");
+      document.getElementById("shoWMenu").style.transform = "translateY(0)";
+      MenuRef.current.classList.add("active");
+    }
   }
   function handleClick(e) {
     e.preventDefault();
@@ -63,7 +69,7 @@ export default function MainNav() {
 
   return (
     <>
-      {["lg"].map((expand) => (
+      {["xl"].map((expand) => (
         <Navbar
           key={expand}
           expand={expand}
