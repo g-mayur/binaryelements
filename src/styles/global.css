@@ -623,6 +623,7 @@ svg {
 
 .buproducts_holder .casestudy__slider_wrapper .slick-track {
   display: flex;
+  margin: 0;
 }
 
 .buproducts_holder .casestudy__slider_wrapper .slick-list {
@@ -876,8 +877,6 @@ svg {
   color: #f2f2f2 !important;
   text-decoration: none;
   white-space: nowrap;
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
 }
 
 .footer .call a:last-of-type,
@@ -895,21 +894,28 @@ svg {
   color: #f2f2f2;
 }
 
-@media only screen and (max-width: 1199.98px) {
-  .product-slider .product__wrapper {
-    background-size: 300px !important;
-  }
-}
-
-@media only screen and (min-width: 1199.98px) and (max-width: 1599.98px) {
+@media only screen and (min-width: 1600px) and (max-width: 1799.98px) {
   .header__menu a {
     font-size: 14px;
   }
+
+  .container-fluid {
+    width: calc(100% - 24px) !important;
+  }
+
+  .navbar-brand img {
+    max-width: 170px;
+  }
+
+  .header__menu .action__btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024.98px) {
-  .container-fluid {
-    width: calc(100% - 48px) !important;
+@media only screen and (max-width: 1199.98px) {
+  .product-slider .product__wrapper {
+    background-size: 300px !important;
   }
 
   .mobile-menu {
@@ -934,7 +940,6 @@ svg {
 
   .mobile-menu .offcanvas-body {
     padding: 24px;
-    /* padding-top: 150px; */
   }
 
   .mobile-menu .offcanvas-body .header__menu {
@@ -967,6 +972,34 @@ svg {
     border-radius: 50px;
   }
 
+  button.navbar-toggler span {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik00IDkuMzMzMzFIMjgiIHN0cm9rZT0iI0YyRjJGMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPg0KPHBhdGggZD0iTTQgMTZIMjgiIHN0cm9rZT0iI0YyRjJGMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPg0KPHBhdGggZD0iTTQgMjIuNjY2N0gyOCIgc3Ryb2tlPSIjRjJGMkYyIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+DQo8L3N2Zz4NCg==);
+  }
+}
+
+@media only screen and (min-width: 1199.98px) and (max-width: 1599.98px) {
+  .header__menu a {
+    font-size: 14px;
+  }
+
+  .container-fluid {
+    width: calc(100% - 24px) !important;
+  }
+
+  .navbar-brand img {
+    max-width: 170px;
+  }
+
+  .header__menu .action__btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024.98px) {
+  .container-fluid {
+    width: calc(100% - 48px) !important;
+  }
 
   .navbar-brand img {
     max-width: 200px;
@@ -1092,61 +1125,6 @@ svg {
     background-image: url("../assets/menu.svg");
   }
 
-  .mobile-menu {
-    width: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    border: none !important;
-    background: #333333 !important;
-    display: flex;
-  }
-
-  .mobile-menu .offcanvas-header {
-    padding: 24px;
-  }
-
-  .mobile-menu .offcanvas-header .btn-close {
-    background-color: #ffffff;
-    border-radius: 50px;
-    opacity: 1;
-    padding: 16px;
-  }
-
-  .mobile-menu .offcanvas-body {
-    padding: 24px;
-    /* padding-top: 150px; */
-  }
-
-  .mobile-menu .offcanvas-body .header__menu {
-    height: 100%;
-  }
-
-  .mobile-menu .offcanvas-body .header__menu .action__btn {
-    margin-top: auto;
-  }
-
-  .mobile-menu .offcanvas-body .header__menu a {
-    text-align: center;
-    text-decoration: none;
-    font-family: "Figtree";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    letter-spacing: -0.02em;
-    color: #f2f2f2;
-    padding: 29px;
-    transition: all 0.5s ease;
-  }
-
-  .mobile-menu .offcanvas-body .header__menu a[aria-current="page"],
-  .mobile-menu .offcanvas-body .header__menu a:hover,
-  .mobile-menu .offcanvas-body .header__menu a:focus {
-    color: #333333 !important;
-    background: #ffdd71;
-    border-radius: 50px;
-  }
-
   /* BUSINESS UNITS DRAWER */
   .businessunit__drawer {
     width: 100% !important;
@@ -1237,6 +1215,7 @@ svg {
   .container-fluid {
     width: calc(100% - 24px) !important;
   }
+
   .trustedcomapnies_holder .slick-slider {
     margin-left: -24px;
   }
