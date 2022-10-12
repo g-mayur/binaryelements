@@ -994,15 +994,64 @@ svg {
     font-size: 14px;
     padding: 10px 25px;
   }
+  .H1 {
+    font-family: "Figtree";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: -0.05em;
+    color: #000000;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024.98px) {
+@media only screen and (min-width: 1025px) and (max-width: 1199.98px) {
+  .H1 {
+    font-family: "Figtree";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 80px;
+    letter-spacing: -0.05em;
+    color: #000000;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024.98px) {
   .container-fluid {
     width: calc(100% - 48px) !important;
   }
 
   .navbar-brand img {
     max-width: 200px;
+  }
+  .H1 {
+    font-family: "Figtree";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.05em;
+    color: #000000;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .container-fluid {
+    width: calc(100% - 48px) !important;
+  }
+
+  .navbar-brand img {
+    max-width: 200px;
+  }
+  .H1 {
+    font-family: "Figtree";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 80px;
+    letter-spacing: -0.05em;
+    color: #000000;
   }
 }
 
@@ -1073,8 +1122,8 @@ svg {
     font-family: "Figtree";
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 46px;
     letter-spacing: -0.03em;
     color: #e0e0e0;
   }

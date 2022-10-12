@@ -86,7 +86,7 @@ const AsNavFor = () => {
           ref={(slider) => setNav1(slider)}
         >
           <div
-            className={`hero__slider-img position-relative overlay d-flex align-items-end voipElementsbg ${voipElementsbg}`}
+            className={`hero__slider-img position-relative overlay d-flex align-items-center align-items-lg-end voipElementsbg ${voipElementsbg}`}
           >
             <Container fluid>
               <Row>
@@ -133,7 +133,7 @@ const AsNavFor = () => {
             </Container>
           </div>
           <div
-            className={`hero__slider-img position-relative overlay d-flex align-items-end itElementsbg ${itElementsbg}`}
+            className={`hero__slider-img position-relative overlay d-flex align-items-center align-items-lg-end itElementsbg ${itElementsbg}`}
           >
             <Container fluid>
               <Row>
@@ -180,7 +180,7 @@ const AsNavFor = () => {
             </Container>
           </div>
           <div
-            className={`hero__slider-img position-relative overlay d-flex align-items-end cloudElementsbg ${cloudElementsbg}`}
+            className={`hero__slider-img position-relative overlay d-flex align-items-center align-items-lg-end cloudElementsbg ${cloudElementsbg}`}
           >
             <Container fluid>
               <Row>
@@ -224,7 +224,7 @@ const AsNavFor = () => {
             </Container>
           </div>
           <div
-            className={`hero__slider-img position-relative overlay d-flex align-items-end growthElementsbg ${growthElementsbg}`}
+            className={`hero__slider-img position-relative overlay d-flex align-items-center align-items-lg-end growthElementsbg ${growthElementsbg}`}
           >
             <Container fluid>
               <Row>
@@ -270,7 +270,7 @@ const AsNavFor = () => {
             </Container>
           </div>
           <div
-            className={`hero__slider-img position-relative overlay d-flex align-items-end iotElementsbg ${iotElementsbg}`}
+            className={`hero__slider-img position-relative overlay d-flex align-items-center align-items-lg-end iotElementsbg ${iotElementsbg}`}
           >
             <Container fluid>
               <Row>
