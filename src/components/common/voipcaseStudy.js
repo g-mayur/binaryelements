@@ -116,9 +116,9 @@ const VoipCasestudy = () => {
                           <Link className='cursor-pointer'>read more</Link>
                       </div>
                   </div>
-                  {/* {!mobileView ? */}
+                  {!mobileView ?
                     <div className='casestudy_content mobileView'></div>
-                   {/* :null}   */}
+                    :null}   
               </Slider>
           </div>
         </div>
