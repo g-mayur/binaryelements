@@ -1,12 +1,12 @@
 import { useState,useEffect } from 'react'
 
-// const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== "undefined"
 
 export default function useWindowResize(){
 
-  //   if (!isBrowser) {
-  //    return;
-  // }
+    if (!isBrowser) {
+     return;
+  }
 
     let mobileView = false;
     const [windowSize, setWindowSize] = useState(getWindowSize());

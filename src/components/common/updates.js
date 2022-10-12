@@ -7,12 +7,12 @@ import updateImage2 from "../../assets/updates/updateImg-2.png";
 import updateImage3 from "../../assets/updates/updateImg-3.png";
 import useWindowResize from "../common/windowResize";
 
-// const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== "undefined"
 
 const Updates = () => {
-    // if (!isBrowser) {
-    //     return;
-    //  }
+    if (!isBrowser) {
+        return;
+     }
     const [mobileView] = useWindowResize();
 
     console.log("windo resize==>.final",mobileView);

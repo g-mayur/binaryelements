@@ -8,12 +8,12 @@ import CSImage4 from "../../assets/voipelements/cloudcasestudy-img4.png";
 import { Link } from "gatsby";
 import useWindowResize from "../common/windowResize";
 
-// const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== "undefined"
 
 const CloudCasestudy = () => {
-//   if (!isBrowser) {
-//     return;
-//  }
+  if (!isBrowser) {
+    return;
+ }
   const [mobileView] = useWindowResize();
 
     const voipcasestudySlider = {

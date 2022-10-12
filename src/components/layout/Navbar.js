@@ -14,12 +14,12 @@ import ITSVG from "../../assets/header/itsvg.svg";
 import IOTSVG from "../../assets/header/iotsvg.svg";
 
 // Check if window is defined (so if in the browser or in node.js).
-// const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== "undefined"
 
 export default function MainNav() {
-  // if (!isBrowser) {
-  //    return;
-  // }
+  if (!isBrowser) {
+     return;
+  }
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
