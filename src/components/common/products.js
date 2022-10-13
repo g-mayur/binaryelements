@@ -51,16 +51,17 @@ const Products = () => {
     });
 
     ScrollTrigger.addEventListener("refreshInit", refresh);
+
   }, []);
   
   return (
     <>
-      <div className="pin-spacer product-slider mt-5 d-none d-lg-block">
+      <div className="pin-spacer product-slider mt-5 d-none d-md-block">
         <div id="sectionPin">
           <div className="row d-flex flex-nowrap py-70 pin-wrap">
             <div
               id="section-2"
-              className="d-flex flex-wrap col-6 col-sm-6 col-md-2 process-item process-item--nobefore product__wrapper py-5 communicate"
+              className="d-flex flex-wrap col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 process-item process-item--nobefore product__wrapper py-5 communicate"
             >
               <div className="product-slide-inner-block">
                 <Link to="/business-units/voip-elements/">
@@ -81,7 +82,7 @@ const Products = () => {
             </div>
             <div
               id="section-1"
-              className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 run"
+              className="d-flex flex-wrap col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 process-item product__wrapper py-5 run"
             >
               <div className="product-slide-inner-block">
                 <Link to="/business-units/it-elements/">
@@ -97,7 +98,7 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 protect">
+            <div className="d-flex flex-wrap col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 process-item product__wrapper py-5 protect">
               <div className="product-slide-inner-block">
                 <Link to="/business-units/cloud-elements/">
                   <img src={Protect} alt="Protect" className="mx-auto" />
@@ -112,7 +113,7 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 automate">
+            <div className="d-flex flex-wrap col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 process-item product__wrapper py-5 automate">
               <div className="product-slide-inner-block">
                 <Link to="/business-units/growth-elements/">
                   <img src={Automate} alt="Automate" className="mx-auto" />
@@ -127,7 +128,7 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="d-flex flex-wrap col-12 col-sm-6 col-md-2 process-item product__wrapper py-5 future">
+            <div className="d-flex flex-wrap col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 process-item product__wrapper py-5 future">
               <div className="product-slide-inner-block">
                 <Link to="/business-units/iot-elements/">
                   <img src={Future} alt="Future" className="mx-auto" />
