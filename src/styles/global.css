@@ -915,7 +915,7 @@ svg {
 
 @media only screen and (max-width: 1199.98px) {
   .product-slider .product__wrapper {
-    background-size: 300px !important;
+    background-size: contain !important;
   }
 
   .mobile-menu {
@@ -1107,10 +1107,7 @@ svg {
   }
 
   .product-slider .product__wrapper {
-    background-size: 400px !important;
-  }
-
-  .product-slider .product__wrapper {
+    background-size: 300px !important;
     text-align: center;
   }
 
@@ -1263,6 +1260,10 @@ svg {
 @media only screen and (max-width: 600.98px) {
   .container-fluid {
     width: calc(100% - 24px) !important;
+  }
+
+  .product-slider .product__wrapper {
+    background-size: contain !important;
   }
 
   .trustedcomapnies_holder .slick-slider {
