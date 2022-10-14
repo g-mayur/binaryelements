@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react'
+import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Slider from "react-slick";
 import updateImage1 from "../../assets/updates/updateImg-1.png";
@@ -7,16 +7,9 @@ import updateImage2 from "../../assets/updates/updateImg-2.png";
 import updateImage3 from "../../assets/updates/updateImg-3.png";
 import useWindowResize from "../common/windowResize";
 
-const isBrowser = typeof window !== "undefined"
-
 const Updates = () => {
-    if (!isBrowser) {
-        return;
-     }
     const [mobileView] = useWindowResize();
-
-    console.log("windo resize==>.final",mobileView);
-
+    
     const updateSlider = {
         slidesToShow: 3,
         slidesToScroll: 1,

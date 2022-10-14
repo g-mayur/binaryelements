@@ -33,7 +33,6 @@ import {
 import Companies from "../components/common/companies";
 import Updates from "../components/common/updates";
 import Products from "../components/common/products";
-import ScrollBtn from "../components/common/ScrollButton";
 
 const AsNavFor = () => {
   const [nav1, setNav1] = useState(null);

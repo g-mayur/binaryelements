@@ -13,13 +13,8 @@ import GROWTHSVG from "../../assets/header/growthsvg.svg";
 import ITSVG from "../../assets/header/itsvg.svg";
 import IOTSVG from "../../assets/header/iotsvg.svg";
 
-// Check if window is defined (so if in the browser or in node.js).
-const isBrowser = typeof window !== "undefined"
-
 export default function MainNav() {
-  if (!isBrowser) {
-     return;
-  }
+  
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -46,7 +41,6 @@ export default function MainNav() {
       MenuRef.current.classList.add("active");
     }
     if (window.pageYOffset === 0) {
-      console.log("You are on ", window.pageYOffset);
       document.getElementById("HeaderNavbar").style.transform = "translateY(0)";
       navRef.current.classList.remove("show");
       document.getElementById("shoWMenu").style.transform = "translateY(-200px)";
@@ -271,11 +265,11 @@ export default function MainNav() {
         ref={MenuRef}
       >
         <div className="icon d-flex align-items-center">
-          <a id="hamburger-icon" href="#" title="Menu">
+          <Link id="hamburger-icon" title="Menu">
             <span className="line line-1"></span>
             <span className="line line-2"></span>
             <span className="line line-3"></span>
-          </a>
+          </Link>
         </div>
       </Button>
         <Offcanvas className="businessunit__drawer" show={show} onHide={handleClose} placement="end">

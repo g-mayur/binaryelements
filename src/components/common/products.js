@@ -13,8 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Products = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const pinBoxes = document.querySelectorAll(".pin-wrap > *");
+    
     const pinWrap = document.querySelector(".pin-wrap");
 
     let pinWrapWidth;
@@ -23,10 +22,7 @@ const Products = () => {
     function refresh() {
       pinWrapWidth = pinWrap.scrollWidth;
       horizontalScrollLength = pinWrapWidth - window.innerWidth;
-      console.log('pinWrapWidth', pinWrapWidth, horizontalScrollLength);
     }
-
-    console.log("window load listener");
     refresh();
     gsap.registerEase("myEaseName", function (progress) {
       return progress; //linear
@@ -41,7 +37,6 @@ const Products = () => {
         pinSpacing: true,
         start: "center center",
         markers: true,
-        onEnter: () => console.log("enter"),
         end: () => `+=${pinWrapWidth}`,
         invalidateOnRefresh: true,
       },

@@ -8,12 +8,7 @@ import CSImage4 from "../../assets/voipelements/iotcasestudy-img4.png";
 import { Link } from "gatsby";
 import useWindowResize from "../common/windowResize";
 
-const isBrowser = typeof window !== "undefined"
 const IotCasestudy = () => {
-
-  if (!isBrowser) {
-    return;
- }
 
   const [mobileView] = useWindowResize();
 

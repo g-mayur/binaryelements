@@ -1,12 +1,6 @@
 import { useState,useEffect } from 'react'
 
-const isBrowser = typeof window !== "undefined"
-
 export default function useWindowResize(){
-
-    if (!isBrowser) {
-     return;
-  }
 
     let mobileView = false;
     const [windowSize, setWindowSize] = useState(getWindowSize());
@@ -29,7 +23,6 @@ export default function useWindowResize(){
     }else{
         mobileView = false;
     }
-    console.log(mobileView,"windo resize==>. 22",windowSize);
     return [mobileView];
 }
 

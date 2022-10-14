@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const ScrollBtn = (props) => {
   const btnStyle = `btn-style ${props.color}`;
-  console.log("Button props==>>", props);
   const handleClick = (e) => {
     e.stopPropagation();
     gsap.to(window, {
